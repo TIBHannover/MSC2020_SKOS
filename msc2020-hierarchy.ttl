@@ -1,0 +1,358 @@
+@prefix : <ttp://msc.org/resources/MSC/msc2020/hierarchy#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://msc.org/resources/MSC/msc2020/hierarchy> .
+
+<http://msc.org/resources/MSC/msc2020/hierarchy> rdf:type owl:Ontology ;
+                                                  rdfs:comment """Construction of Top Concepts:
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix msc: <http://msc.org/resources/MSC/msc2020/>
+
+#select *
+construct {msc: skos:hasTopConcept ?s}
+where
+{
+?s a skos:Concept ; skos:notation ?notation
+filter regex (?notation,  \"\\d\\d-XX\")
+}
+
+order by ?notation""" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://msc.org/resources/MSC/msc2020/
+<http://msc.org/resources/MSC/msc2020/> rdf:type owl:NamedIndividual ;
+                                        <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://msc.org/resources/MSC/msc2020/00-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/01-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/03-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/05-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/06-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/08-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/11-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/12-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/13-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/14-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/15-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/16-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/17-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/18-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/19-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/20-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/22-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/26-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/28-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/30-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/31-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/32-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/33-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/34-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/35-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/37-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/39-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/40-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/41-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/42-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/43-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/44-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/45-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/46-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/47-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/49-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/51-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/52-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/53-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/54-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/55-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/57-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/58-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/60-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/62-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/65-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/68-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/70-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/74-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/76-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/78-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/80-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/81-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/82-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/83-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/85-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/86-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/90-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/91-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/92-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/93-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/94-XX> ,
+                                                                                            <http://msc.org/resources/MSC/msc2020/97-XX> .
+
+
+###  http://msc.org/resources/MSC/msc2020/00-XX
+<http://msc.org/resources/MSC/msc2020/00-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/01-XX
+<http://msc.org/resources/MSC/msc2020/01-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/03-XX
+<http://msc.org/resources/MSC/msc2020/03-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/05-XX
+<http://msc.org/resources/MSC/msc2020/05-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/06-XX
+<http://msc.org/resources/MSC/msc2020/06-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/08-XX
+<http://msc.org/resources/MSC/msc2020/08-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/11-XX
+<http://msc.org/resources/MSC/msc2020/11-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/12-XX
+<http://msc.org/resources/MSC/msc2020/12-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/13-XX
+<http://msc.org/resources/MSC/msc2020/13-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/14-XX
+<http://msc.org/resources/MSC/msc2020/14-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/15-XX
+<http://msc.org/resources/MSC/msc2020/15-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/16-XX
+<http://msc.org/resources/MSC/msc2020/16-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/17-XX
+<http://msc.org/resources/MSC/msc2020/17-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/18-XX
+<http://msc.org/resources/MSC/msc2020/18-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/19-XX
+<http://msc.org/resources/MSC/msc2020/19-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/20-XX
+<http://msc.org/resources/MSC/msc2020/20-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/22-XX
+<http://msc.org/resources/MSC/msc2020/22-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/26-XX
+<http://msc.org/resources/MSC/msc2020/26-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/28-XX
+<http://msc.org/resources/MSC/msc2020/28-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/30-XX
+<http://msc.org/resources/MSC/msc2020/30-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/31-XX
+<http://msc.org/resources/MSC/msc2020/31-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/32-XX
+<http://msc.org/resources/MSC/msc2020/32-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/33-XX
+<http://msc.org/resources/MSC/msc2020/33-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/34-XX
+<http://msc.org/resources/MSC/msc2020/34-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/35-XX
+<http://msc.org/resources/MSC/msc2020/35-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/37-XX
+<http://msc.org/resources/MSC/msc2020/37-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/39-XX
+<http://msc.org/resources/MSC/msc2020/39-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/40-XX
+<http://msc.org/resources/MSC/msc2020/40-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/41-XX
+<http://msc.org/resources/MSC/msc2020/41-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/42-XX
+<http://msc.org/resources/MSC/msc2020/42-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/43-XX
+<http://msc.org/resources/MSC/msc2020/43-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/44-XX
+<http://msc.org/resources/MSC/msc2020/44-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/45-XX
+<http://msc.org/resources/MSC/msc2020/45-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/46-XX
+<http://msc.org/resources/MSC/msc2020/46-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/47-XX
+<http://msc.org/resources/MSC/msc2020/47-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/49-XX
+<http://msc.org/resources/MSC/msc2020/49-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/51-XX
+<http://msc.org/resources/MSC/msc2020/51-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/52-XX
+<http://msc.org/resources/MSC/msc2020/52-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/53-XX
+<http://msc.org/resources/MSC/msc2020/53-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/54-XX
+<http://msc.org/resources/MSC/msc2020/54-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/55-XX
+<http://msc.org/resources/MSC/msc2020/55-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/57-XX
+<http://msc.org/resources/MSC/msc2020/57-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/58-XX
+<http://msc.org/resources/MSC/msc2020/58-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/60-XX
+<http://msc.org/resources/MSC/msc2020/60-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/62-XX
+<http://msc.org/resources/MSC/msc2020/62-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/65-XX
+<http://msc.org/resources/MSC/msc2020/65-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/68-XX
+<http://msc.org/resources/MSC/msc2020/68-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/70-XX
+<http://msc.org/resources/MSC/msc2020/70-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/74-XX
+<http://msc.org/resources/MSC/msc2020/74-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/76-XX
+<http://msc.org/resources/MSC/msc2020/76-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/78-XX
+<http://msc.org/resources/MSC/msc2020/78-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/80-XX
+<http://msc.org/resources/MSC/msc2020/80-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/81-XX
+<http://msc.org/resources/MSC/msc2020/81-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/82-XX
+<http://msc.org/resources/MSC/msc2020/82-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/83-XX
+<http://msc.org/resources/MSC/msc2020/83-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/85-XX
+<http://msc.org/resources/MSC/msc2020/85-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/86-XX
+<http://msc.org/resources/MSC/msc2020/86-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/90-XX
+<http://msc.org/resources/MSC/msc2020/90-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/91-XX
+<http://msc.org/resources/MSC/msc2020/91-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/92-XX
+<http://msc.org/resources/MSC/msc2020/92-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/93-XX
+<http://msc.org/resources/MSC/msc2020/93-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/94-XX
+<http://msc.org/resources/MSC/msc2020/94-XX> rdf:type owl:NamedIndividual .
+
+
+###  http://msc.org/resources/MSC/msc2020/97-XX
+<http://msc.org/resources/MSC/msc2020/97-XX> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
