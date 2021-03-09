@@ -18,23 +18,28 @@
            rdfs:subPropertyOf rdf:object .
 
 
-###  http://msc.org/resources/MSC/msc2020/mscvocab#references
-:references rdf:type owl:ObjectProperty .
+###  http://msc.org/resources/MSC/msc2020/mscvocab#relatedPartOf
+:relatedPartOf rdf:type owl:ObjectProperty .
 
 
 ###  http://msc.org/resources/MSC/msc2020/mscvocab#seeAlso
 :seeAlso rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf :references .
+         rdfs:subPropertyOf :relatedPartOf .
+
+
+###  http://msc.org/resources/MSC/msc2020/mscvocab#seeConditionally
+:seeConditionally rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :relatedPartOf .
 
 
 ###  http://msc.org/resources/MSC/msc2020/mscvocab#seeFor
 :seeFor rdf:type owl:ObjectProperty ;
-        rdfs:subPropertyOf :references .
+        rdfs:subPropertyOf :relatedPartOf .
 
 
 ###  http://msc.org/resources/MSC/msc2020/mscvocab#seeMainly
 :seeMainly rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf :references .
+           rdfs:subPropertyOf :relatedPartOf .
 
 
 #################################################################
