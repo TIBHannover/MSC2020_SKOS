@@ -1,6 +1,142 @@
+# MSC 2020 - SKOSification procedure
+
+State of this document: draft
+
+- missing information is marked as [x]
+- discussion points are given as question-answer-pairs, where questions are marked as 'Q\d:' and answers given directly below by 'A\d:'
+
+This document describes how the SKOS version 2020 has been created.
+The current version is available at <https://github.com/runnwerth/MSC2020_SKOS/blob/main/msc-2020-suggestion2-incomplete.ttl>
+
+[[_TOC_]]
+
+## General information on the 2010 SKOS version of MSC and its creation
+Legacy modelling decisions for the MSC 2010 SKOS version are described in the following papers:
+
+- Christoph Lange, Patrick Ion, Anastasia Dimou, Charalampos Bratsas, Wolfram Sperber, Michael Kohlhase, and Ioannis Antoniou: Bringing Mathematics to the Web of Data: The Case of the Mathematics Subject Classification. In: E. Simperl et al. (Eds.): ESWC 2012, LNCS 7295, pp. 763–777, 2012 .
+- tbd: others, e.g. <http://msc2010.org/resources/MSC/2010/info/>
+
+These were followed wherever possible.
+
+## Input for the SKOS version of MSC 2020 
+The input for creating the SKOS was an export from the [x] database provided by [x] as a .xslx-file with the following structure:
+
+### Sheet 1: MSC 2020
+
+| code | text | description |
+| ---      |  ------  |----------|
+| 00-01   | Introductory exposition (textbooks, tutorial papers, etc.) pertaining to mathematics in general   | Introductory exposition (textbooks, tutorial papers, etc.) pertaining to mathematics in general   |
+
+### Sheet 2: MSC 2010
+This sheet was structured just like sheet 1 but containing data from MSC 2010.
+
+### Sheet 3: Transformation
+
+| MSC2010 | MSC2020 | (A)ufspaltung / (N)eu / (V)erschiebung / (Z)usammenführung |
+| ---      |  ------  |----------|
+| 00   |  | |
+|  | 00A27, 00A64 | N |
+| 00A73, 00A79 | 00A79 | Z |
+| 01 | |  |
+| 01-08 |  | gelöscht |
+
+## Tools used during the creation of the SKOS version of MSC 2020
+
+- OpenRefine 3.4.1
+- Protégé 5.5.0 with memory set to 3641 MB via Java -Xmx setting
+
+We used OpenRefine to create all the basic triples for the MSC 2020. The output of our work with OpenRefine is a table in which some columns contain usable RDF triples. These can be exported and imported into a preprepared .tt-file declaring all the namespaces and containing additional data, e.g. metadata.
+
+Some additions have been made with Protégé's SPARQL-Plug-In snap. The respective queries are documented in the .ttl-file as `rdfs:comment` of `msc:`.
+
+\#\#\# To Do \#\#\# 
+- tbd: add OpenRefine user documentation and basic grel-tutorials
+- tbd: add stuff you should know about OpenRefine here or at appropriate places, e.g. facets and filters (are documented in the json)
+
+\#\#\# To Do \#\#\# 
+
+## Definition of modelling tasks
+
+To create a complete SKOS version of MSC 2020 that resembles the structure of MSC 2020 requires to perform the following tasks:
+
+Task 0: Set up a basic .tt-file.
+- declaration of namespaces
+- declaration of imports
+- declaration of metadata
+
+Task 1: Basic triples
+
+- create identifiers for each class
+- define the rdf:type of elements
+- create basic triples (skos:prefLabel, skos:notation, skos:scopeNote, skos:inScheme) from information in the table
+
+Task 2: Concept hierarchy
+
+- create the concept hierarchy (skos:broader/skos:narrower)
+
+Task 3: Internal references
+
+- create internal references between MSC skos:Concepts (mscvocab:seeMainly, mscvoab:seeAlso, mscvocab:seeFor)
+
+Task 4: Historical references [still open, see <https://github.com/runnwerth/MSC2020_SKOS/issues/6>]
+
+- create links between MSC 2020 concepts and MSC 2010 and add descriptions of the changes
+
+Task 5: Create collections
+- create instances of skos:Collection and define which are its `skos:member`.
+
+Q1: The tasks have not been performed in that order, which is why some of the OpenRefine operations documented below are not given in a consecutive order (e.g. *Task2: Concept hierarchy* has been done after introducing a filter criterium for *Task 3: Internal references* so that Step 7 will be described after Steps 8-x). Is that confusing?
+
+## Documentation of modelling steps
+
+In the following we will describe the basic modelling tasks that have been performed.
+
+### Task 0: Set up a basic .tt-file
+
+The triples we generate with OpenRefine operations can - after export from OpenRefine - be copypasted into this file. OpenRefine export option: Do not quote text.
+
+```Turtle
+@prefix : <http://msc.org/resources/MSC/msc2020/> .
+@prefix msc: <http://msc.org/resources/MSC/msc2020/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix mscvocab: <http://msc.org/resources/MSC/msc2020/mscvocab#> .
+@base <http://msc.org/resources/MSC/msc2020/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://msc.org/resources/MSC/msc2020/> 
+              rdf:type owl:Ontology , skos:ConceptScheme;
+              owl:imports mscvocab: ,
+                          rdf: ,
+                          <http://www.w3.org/2004/02/skos/core> ;
+              dc11:description "Mathematics Subject Classification 2020 Edition"@en ;
+              dc11:title "MSC2020";
+              rdfs:label "MSC 2020"@en, "Mathematics Subject Classification 2020"@en .
+```
+
+### Task 1: Basic triples
+
+#### **Step 1: Create an OpenRefine project with the .xlsx-file**
+
+The project was set up with the following paramaters:
+
+some.jpg
+
+OpenRefine allows different kinds of operations on the cells and tables of the table. These operations are documented and exportable as json-Code and can thus be re-used on the same or similar data in a different project. The documented operations performed in OpenRefine make use of the imported table's index in the json-Code. The same import parameters should be used when setting up a new project of the data since otherwise the OpenRefine operations would refer to incorrect indices the table resulting from the import.
+
+#### **Step 2: Create identifiers for each class**
+
+The identifiers for each class will be added by adding a new column to the table using the value of each cell in in column `code`.
+
+```json
 [
-# See related document procedure-log-msc2020.txt
-# Step 2: create identifier
+    [
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -13,16 +149,30 @@
     "newColumnName": "Concept Identifier",
     "columnInsertIndex": 2,
     "description": "Create column Concept Identifier at index 2 based on column code using expression grel:\"<http://msc.org/resources/MSC/msc2020/\"+value+\">\""
-  },
-  {
+  }
+]
+```
+
+To keep this table slightly more readable and to better distinguish import data from new data, we move the new column to the end of the table:
+
+```json
+[
+      {
     "op": "core/column-move",
     "columnName": "Concept Identifier",
     "index": 4,
     "description": "Move column Concept Identifier to position 4"
-  },
-  
-# Step 3: Create the label triples
-  {
+  }
+]
+```
+
+#### **Step 3: Create the lable triples**
+
+As labels we use the text in column `text` and the label is created as follows:
+
+```json
+[
+    {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -40,10 +190,17 @@
     "columnName": "Label triple",
     "index": 5,
     "description": "Move column Label triple to position 5"
-  },
-  
-# Step 4: Create rdf:type statement
-  {
+  }
+]
+```
+
+#### **Step 4: Create rdf:type statement**
+
+MSC entries are typed as skos:Concept.
+
+```json
+[
+    {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -61,10 +218,15 @@
     "columnName": "typification triple",
     "index": 6,
     "description": "Move column typification triple to position 6"
-  },
+  }
+]
+```
 
-# Step 5: Create skos:inScheme statement
-  {
+#### **Step 5: Create skos:inScheme statement**
+
+```json
+[
+    {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -82,10 +244,15 @@
     "columnName": "skos:in Scheme triple",
     "index": 7,
     "description": "Move column skos:in Scheme triple to position 7"
-  },
-  
-# Step 6: Create skos:notation statement
-  {
+  }
+]
+```
+
+#### **Step 6: Create skos:notation statement**
+
+```json
+[
+    {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -103,31 +270,21 @@
     "columnName": "notation triples",
     "index": 8,
     "description": "Move column notation triples to position 8"
-  },
-  
-#Step 7: Set a filter criterion for working on Task 3
-  {
-    "op": "core/column-addition",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "baseColumnName": "text",
-    "expression": "grel:if(cells['description'].value == value , true, false)",
-    "onError": "store-error",
-    "newColumnName": "comparison text/description",
-    "columnInsertIndex": 3,
-    "description": "Create column comparison text/description at index 3 based on column text using expression grel:if(cells['description'].value == value , true, false)"
-  },
-  {
-    "op": "core/column-move",
-    "columnName": "comparison text/description",
-    "index": 9,
-    "description": "Move column comparison text/description to position 9"
-  },
-  
- #Step 8: Create a column for each concept's superordinate's identifier
-  {
+  }
+]
+```
+
+### Task 2: Concept Hierarchy
+
+We wanted to give the hierarchical relation by skos:broader, leaving skos:narrower implied. This required to assign each lover-level concept to the appropriate super-ordinate concept. This can be done with OpenRefine or Protégé and a SPARQL `CONSTRUCT` query. We describe the OpenRefine process:
+
+#### **Step 8: Create a column for each concept's superordinate's identifier**
+
+Due to the MSC's great notation, this is a matter of some replacements and concatenations: 
+
+```json
+[
+    {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [
@@ -155,10 +312,15 @@
     "columnName": "Identifier skos:broader",
     "index": 10,
     "description": "Move column Identifier skos:broader to position 10"
-  },
-  
-#Step 9: Create the skos:broader statements
-  {
+  }
+]
+```
+
+#### **Step 9: Create the skos:broader statements**
+
+```json
+[
+    {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -182,10 +344,63 @@
     "columnName": "Hierarchy triples",
     "index": 10,
     "description": "Move column Hierarchy triples to position 10"
+  }
+]
+```
+
+### Task 3: Internal References
+
+Internal references between MSC concepts are described in column `description` of our input file. There are three types of internal references between MSC concepts which are captured by mscvocabs three object properties:
+- mscvocab:seeAlso
+- mscvocab:seeMainly
+- msc:seeConditionally
+
+Next to these kinds of reference, the text in the column ´description´ shows other types of information, e.g. it repeats the content from column `text` or other natural language text. Textual information in this column is often very homogeneous and standardised to a certain degree and can therefore easily be transformed to triples working with mscvocabs object properties. However, there are also some irregularities e.g. there seems to be no standardized order of information types in the column, and on some occasions, there are some deviations from the regular notation in this column.
+
+To be able to create relations between MSC concepts which are `owl:NamedIndividuals` resp. instances of skos:Concept, we needed to extract the notations of these related concepts from the column to perform further steps like identifier creation and triple creation as done before in *Task 1: Basic triples*. Due to the different types of information, the non-standardized order of their occurrence and the irregularities, this required a huge number of steps. The basic aim of these steps was to split the whole set of relevant cells of the column `description` up into columns where all cells contain the same type of information and to split up multi-valued cells with only one value per cell. The values in these new columns can then be used as objects of triples and are either URIs or literals.
+
+Here is an example of a relevant cell with multiple types of information:
+
+| code | text | description |
+| --- | --- | --- |
+|03B45| Modal logic (including the logic of norms) | Modal logic (including the logic of norms) \{For knowledge and belief, see 03B42; for temporal logic, see 03B44; for provability logic, see also 03F45\}|
+
+To adress the "multi-valuedness" and irregularities in this column, we tried to split the cells up according to their shared regularies (using text factes, selection, inversion and text filters) until there was only an irregular rest left. We will not describe all the factes and filters in detail, here, but they and all operations done on column `description` and resulting new columns are documented below in *Step 10: Taiming the `description` column*.
+
+#### **Step 7: Set a filter criterion for working on Task 3**
+
+In this preparatory step we filter out all cells that do not have any internal references, i.e. cells whose content is identical to the content of column `text`.
+
+```json
+[
+    {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "text",
+    "expression": "grel:if(cells['description'].value == value , true, false)",
+    "onError": "store-error",
+    "newColumnName": "comparison text/description",
+    "columnInsertIndex": 3,
+    "description": "Create column comparison text/description at index 3 based on column text using expression grel:if(cells['description'].value == value , true, false)"
   },
-  
-#Step 10: Taiming the `description` column
   {
+    "op": "core/column-move",
+    "columnName": "comparison text/description",
+    "index": 9,
+    "description": "Move column comparison text/description to position 9"
+  }
+]
+```
+#### **Step 10: Taiming the `description` column**
+
+Step 10 incluedes a great number of very fine-grained operations, sometimes even edits on single cells. The following code will not be re-usable in future MSC SKOS conversions and is limited to the data at hand.
+
+```json
+[
+    {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [
@@ -2916,10 +3131,24 @@
     "newColumnName": "seeFor triples",
     "columnInsertIndex": 29,
     "description": "Create column seeFor triples at index 29 based on column For-x-see-y statement identifier using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeFor \"+value+\" .\""
-  },
-  
-#Step 11: Take text from column `description` over to the SKOS version as a scopeNote
-  {
+  }
+]
+```
+
+Some triples could not be created in this process and have been added manually or by the help of SPARQL queries in Protege. The details on that need to be reconstructed from the [commit history](https://github.com/runnwerth/MSC2020_SKOS/commits/main) or issues resulting from *Step 10*:
+
+- [issue 3](https://github.com/runnwerth/MSC2020_SKOS/issues/3)
+- [issue 7](https://github.com/runnwerth/MSC2020_SKOS/issues/7)
+
+The SPARQL queries are documented in the Turtle file as an `rdfs:comment` on `msc:` .
+
+#### **Step 11: Take text from column `description` over to the SKOS version as a scopeNote**
+
+In the end, we decided that it would be a good idea to store the text from column `description` as a skos:scopeNote - just to make sure. 
+
+```json
+[
+      {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [
@@ -2959,3 +3188,12 @@
     "description": "Move column scopeNote for descriptions that differ from text to position 40"
   }
 ]
+```
+
+### Task 4: Historical references
+
+[still open, see <https://github.com/runnwerth/MSC2020_SKOS/issues/6>]
+
+### Task 5: Create collections
+
+See SPARQL queries documented in [msc-2020-suggestion2-incomplete.ttl](https://github.com/runnwerth/MSC2020_SKOS/blob/main/msc-2020-suggestion2-incomplete.ttl).
