@@ -1,4 +1,6 @@
 [
+# See related document procedure-log-msc2020.txt
+# Step 2: create identifier
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -18,6 +20,8 @@
     "index": 4,
     "description": "Move column Concept Identifier to position 4"
   },
+  
+# Step 3: Create the label triples
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -37,6 +41,8 @@
     "index": 5,
     "description": "Move column Label triple to position 5"
   },
+  
+# Step 4: Create rdf:type statement
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -56,6 +62,8 @@
     "index": 6,
     "description": "Move column typification triple to position 6"
   },
+
+# Step 5: Create skos:inScheme statement
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -75,6 +83,8 @@
     "index": 7,
     "description": "Move column skos:in Scheme triple to position 7"
   },
+  
+# Step 6: Create skos:notation statement
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -94,6 +104,8 @@
     "index": 8,
     "description": "Move column notation triples to position 8"
   },
+  
+#Step 7: Set a filter criterion for working on Task 3
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -113,6 +125,8 @@
     "index": 9,
     "description": "Move column comparison text/description to position 9"
   },
+  
+ #Step 8: Create a column for each concept's superordinate's identifier
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -142,6 +156,8 @@
     "index": 10,
     "description": "Move column Identifier skos:broader to position 10"
   },
+  
+#Step 9: Create the skos:broader statements
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -167,6 +183,8 @@
     "index": 10,
     "description": "Move column Hierarchy triples to position 10"
   },
+  
+#Step 10: Taiming the `description` column
   {
     "op": "core/column-addition",
     "engineConfig": {
@@ -2899,6 +2917,8 @@
     "columnInsertIndex": 29,
     "description": "Create column seeFor triples at index 29 based on column For-x-see-y statement identifier using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeFor \"+value+\" .\""
   },
+  
+#Step 11: Take text from column `description` over to the SKOS version as a scopeNote
   {
     "op": "core/column-addition",
     "engineConfig": {

@@ -1,0 +1,158 @@
+@prefix : <http://msc.org/resources/MSC/msc2020/mscvocab#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://msc.org/resources/MSC/msc2020/mscvocab> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<http://msc.org/resources/MSC/msc2020/mscvocab> rdf:type owl:Ontology ;
+                                                 owl:imports rdf: , skos: ;
+                                                 rdfs:comment "This is an MSC-specific extension of SKOS created during the conversion of MSC 2020 to a SKOS vocabulary. It is based on <http://msc2010.org/resources/MSC/2010/mscvocab> created by Patrick Ion and Christoph Lange during their creation of a SKOS version of MSC 2010.";
+                                                 dc:created "2021-03-15"^^xsd:date .
+
+# Addition of properties to describe the ontology:
+
+dc:creator a owl:AnnotationProperty .
+dc:modified a owl:AnnotationProperty .
+dc:created a owl:AnnotationProperty .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+#Expanded after comparison with mscvocab-2010
+###  http://msc.org/resources/MSC/msc2020/mscvocab#forTarget
+:forTarget rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf rdf:object ;
+           rdfs:label "target" ;
+           rdfs:comment "target of a ‘see for’ link" ;
+           rdfs:range skos:Concept ;
+           rdfs:domain rdf:Statement; # maybe this is too general?
+           skos:changeNote "In <http://msc2010.org/resources/MSC/2010/mscvocab> an instance of <http://msc2010.org/resources/MSC/2010/mscvocab#SeeForLink>, which is basically an instance of rdf:Statement was related to an instance of skos:Concept which was the object in a direct \"seeConditionally\" statement between two concepts. In MSC's 2020 SKOS version, we use rdf:object instead of this property."@en .
+
+#Comment on related elements in this property from mscvocab-2010
+<http://msc2010.org/resources/MSC/2010/mscvocab#SeeForLink> 
+                rdfs:comment "Not taken over to mscvocab-2020. For reified links, with introduced classed that are subclasses of rdf:statement, e.g. :seeForStatement."@en ;
+                skos:editorialNote "Mark this class as deprecated."@en ;
+                rdfs:isDefinedBy <http://msc2010.org/resources/MSC/2010/mscvocab> .
+
+# Expanded after comparison with mscvocab-2010
+###  http://msc.org/resources/MSC/msc2020/mscvocab#relatedPartOf
+:relatedPartOf rdf:type owl:ObjectProperty ;
+        rdfs:label "partitively related" ;
+        rdfs:subPropertyOf skos:semanticRelation .
+
+# Expanded after comparison with mscvocab-2010
+###  http://msc.org/resources/MSC/msc2020/mscvocab#seeAlso
+:seeAlso rdf:type owl:ObjectProperty ;
+        rdfs:label "see also" ;
+         rdfs:subPropertyOf :relatedPartOf .
+
+# Expanded after comparison with mscvocab-2010
+###  http://msc.org/resources/MSC/msc2020/mscvocab#seeConditionally
+:seeConditionally rdf:type owl:ObjectProperty ;
+                  rdfs:label "see conditionally" ;
+                  rdfs:subPropertyOf :relatedPartOf ;
+                  owl:propertyChainAxiom (
+   <http://msc2010.org/resources/MSC/2010/mscvocab#seeFor>
+   rdf:object
+ ) ;
+ rdfs:comment "The owl:propertyChainAxiom defined in mscvocab-2010 has been updated to the new reification structure of MSC 2020 SKOS."@en .
+
+#Expanded after comparison with mscvocab-2010
+###  http://msc.org/resources/MSC/msc2020/mscvocab#seeFor
+:seeFor rdf:type owl:ObjectProperty ;
+        rdfs:label "for <some specific topic>, see" ;
+        rdfs:comment "pointer to a record that describes a ‘see for’ link , i.e. an instance of mscvocab:seeForStatement"@en ;
+        rdfs:range :seeForStatement ;
+        rdfs:domain skos:Concept ;
+        rdfs:subPropertyOf :relatedPartOf ;
+        rdfs:comment "The rdfs:range defined in mscvocab-2010 of this property has been updated to the new reification structure of MSC 2020 SKOS."@en .
+
+#Expanded after comparison with mscvocab-2010
+###  http://msc.org/resources/MSC/msc2020/mscvocab#seeMainly
+:seeMainly rdf:type owl:ObjectProperty ;
+           rdfs:label "see mainly" ;
+           rdfs:subPropertyOf :relatedPartOf .
+
+#Updated IRI of inverse property
+<http://msc2010.org/resources/MSC/2010/mscvocab#forSource>
+  a owl:ObjectProperty ;
+  rdfs:label "source" ;
+  rdfs:comment "source of a ‘see for’ link" ;
+  owl:inverseOf <http://msc.org/resources/MSC/msc2020/mscvocab#seeFor> ;
+  rdfs:range skos:Concept .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://msc.org/resources/MSC/msc2020/mscvocab#seeForStatement
+:seeForStatement rdf:type owl:Class ;
+                 rdfs:subClassOf rdf:Statement ;
+                 rdfs:comment "Type of rdf:Statement that allows the annotation of a triple using mscvocab:seeConditionally/ reification of a triple using mscvocab:seeConcitionally. A :seeForStatement declares an rdf:subject, an rdf:predicate and an rdf:object and an mscvocab:scope that defines the condition of the reified triple using mscvocab:seeConditionally.";
+                 skos:editorialNote "Newly introduced in mscvoca-2020, successor of <http://msc2010.org/resources/MSC/2010/mscvocab#SeeForLink>";
+                 skos:editorialNote "Class IRI needs to be updated to follow CamelCase for classes. Update in MSC 2020 SKOS needed as well".
+
+#Additions based on comparison between mscvocab-2010 and mscvocab-2020
+<http://msc2010.org/resources/MSC/2010/mscvocab#MSCNotation>
+  a rdfs:Datatype ;
+  rdfs:label "MSC notation" ;
+  owl:equivalentClass [
+    a rdfs:Datatype ;
+    owl:onDatatype <http://msc2010.org/resources/MSC/2010/mscvocab#string> ;
+    owl:withRestrictions ( xsd:pattern "[0-9]{2}([A-Z-][0-9]{2}|-XX|[A-Z]xx)" )
+  ] ;
+  rdfs:comment "an MSC notation" .
+
+<http://msc2010.org/resources/MSC/2010/mscvocab#string> a rdfs:Datatype .
+
+#Taken over from mscvocab-2010 but not yet used by MSC 2020 SKOS, yet:
+<http://msc2010.org/resources/MSC/2010/mscvocab#MustUseScopeNote>
+  a owl:Class ;
+  rdfs:label "‘must use’ scope note" ;
+  rdfs:subClassOf <http://msc2010.org/resources/MSC/2010/mscvocab#ScopeNote> ;
+  rdfs:comment "note on what additional classes must be used to classify a concept" .
+
+<http://msc2010.org/resources/MSC/2010/mscvocab#NotUseScopeNote>
+  a owl:Class ;
+  rdfs:label "‘not use’ scope note" ;
+  rdfs:subClassOf <http://msc2010.org/resources/MSC/2010/mscvocab#ScopeNote> ;
+  rdfs:comment "note on what classes should not be used to classify a concept" .
+
+<http://msc2010.org/resources/MSC/2010/mscvocab#ScopeNote>
+  a owl:Class ;
+  rdfs:label "scope note" ;
+  rdfs:comment "note about the scope of a concept" .
+
+<http://msc2010.org/resources/MSC/2010/mscvocab#UseScopeNote>
+  a owl:Class ;
+  rdfs:label "‘use’ scope note" ;
+  rdfs:subClassOf <http://msc2010.org/resources/MSC/2010/mscvocab#ScopeNote> ;
+  rdfs:comment "note on what additional classes should be used to classify a concept" .
+
+[]
+  a owl:AllDisjointClasses ;
+  owl:members (
+   <http://msc2010.org/resources/MSC/2010/mscvocab#MustUseScopeNote>
+   <http://msc2010.org/resources/MSC/2010/mscvocab#NotUseScopeNote>
+   <http://msc2010.org/resources/MSC/2010/mscvocab#UseScopeNote>
+ ) .
+
+<http://msc2010.org/resources/MSC/2010/mscvocab#scope>
+  a owl:ObjectProperty ;
+  rdfs:label "scope" ;
+  rdfs:comment "used to restrict the scope of a link to a partitively related concept" ;
+  rdfs:domain <http://msc2010.org/resources/MSC/2010/mscvocab#ScopeNote> ;
+  rdfs:subPropertyOf skos:scopeNote .
+
+<http://msc2010.org/resources/MSC/2010/mscvocab#matchDewey>
+  a owl:ObjectProperty ;
+  rdfs:label "matches Dewey Decimal Classification concept" ;
+  rdfs:comment "link to a matching DDC concept (to be used until we know more exactly what kind of match it is, e.g. broad, exact, …)" ;
+  rdfs:subPropertyOf skos:mappingRelation .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
