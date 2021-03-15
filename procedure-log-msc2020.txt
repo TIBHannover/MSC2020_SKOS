@@ -131,9 +131,13 @@ The triples we generate with OpenRefine operations can - after export from OpenR
 
 #### **Step 1: Create an OpenRefine project with the .xlsx-file**
 
-The project was set up with the following paramaters:
+The project was set up with the following paramaters checked in:
 
-some.jpg
+- parse data as: Excel file
+- parse next 1 line(s) as column headers
+- store blank rows
+- store blank cells as nulls
+- store file source (file name, URLs) in each row
 
 OpenRefine allows different kinds of operations on the cells and tables of the table. These operations are documented and exportable as json-Code and can thus be re-used on the same or similar data in a different project. The documented operations performed in OpenRefine make use of the imported table's index in the json-Code. The same import parameters should be used when setting up a new project of the data since otherwise the OpenRefine operations would refer to incorrect indices the table resulting from the import.
 
