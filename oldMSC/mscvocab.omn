@@ -1,0 +1,121 @@
+Prefix: : <http://msc2010.org/resources/MSC/2010/mscvocab#>
+
+Prefix: skos:    <http://www.w3.org/2004/02/skos/core#>
+Prefix: dcterms: <http://purl.org/dc/terms/>
+
+AnnotationProperty: dcterms:created
+AnnotationProperty: dcterms:creator
+AnnotationProperty: dcterms:modified
+
+Ontology: <http://msc2010.org/resources/MSC/2010/mscvocab>
+  Annotations: rdfs:comment "MSC-specific extension of the SKOS vocabulary.  This ontology is actually intended to import and extend SKOS Core, but as that doesn't work with Protégé, we redeclare part of SKOS here.  So far, the primary reference for the design considerations underlying this ontology is the following the following publication:\nChristoph Lange, Patrick Ion, Anastasia Dimou, Charalampos Bratsas, Wolfram Sperber, Michael Kohlhase, and Ioannis Antoniou: Getting Mathematics Towards the Web of Data: the Case of the Mathematics Subject Classification.  In: Elena Paslaru Bontas Simperl et al. (eds.), 9th Extended Semantic Web Conference (ESWC).  Hersonissos, Crete, Greece.  Lecture Notes in Computer Science, Springer, 2012.",
+    rdfs:label "Mathematics Subject Classification (MSC2010)",
+    dcterms:creator "Christoph Lange",
+    dcterms:creator "Patrick Ion",
+    dcterms:modified "2012-03-10"^^xsd:date,
+    dcterms:created "2012-02-16"^^xsd:date
+  # Import: skos:
+
+# Protégé does not support importing the actual SKOS ontology, so we just redeclare the relevant SKOS vocabulary:
+ObjectProperty: skos:semanticRelation
+ObjectProperty: skos:mappingRelation
+ObjectProperty: skos:changeNote
+ObjectProperty: skos:scopeNote
+Class: skos:Concept
+
+# Our actual vocabulary starts here:
+ObjectProperty: relatedPartOf
+  Annotations: rdfs:label "partitively related"
+  SubPropertyOf: skos:semanticRelation
+
+# TODO maybe comment on symmetry vs. non-symmetry of this property (cf. http://trac.mathweb.org/msc/ticket/9)
+ObjectProperty: seeAlso
+  Annotations: rdfs:label "see also"
+  SubPropertyOf: relatedPartOf
+
+# FIXME some "seeMainly" links in the SKOS are broken, as they contain additional text.  Figure out how to handle this.
+ObjectProperty: seeMainly
+  Annotations: rdfs:label "see mainly"
+  SubPropertyOf: relatedPartOf
+
+ObjectProperty: seeConditionally
+  Annotations: rdfs:label "see conditionally"
+  SubPropertyOf: relatedPartOf
+  SubPropertyChain: seeFor o forTarget
+
+ObjectProperty: seeFor
+  Annotations: rdfs:comment "pointer to a record that describes a ‘see for’ link",
+    rdfs:label "for <some specific topic>, see"
+  Domain: skos:Concept
+  Range: SeeForLink
+
+ObjectProperty: forSource
+  Annotations: rdfs:label "source",
+    rdfs:comment "source of a ‘see for’ link"
+  Range: skos:Concept
+  InverseOf: seeFor
+
+ObjectProperty: forTarget
+  Annotations: rdfs:label "target",
+    rdfs:comment "target of a ‘see for’ link"
+  Domain: SeeForLink
+  Range: skos:Concept
+
+ObjectProperty: formerlyNote
+  Annotations: rdfs:label "note (formerly)",
+    # FIXME clarify; see http://trac.mathweb.org/msc/ticket/7
+    owl:deprecated "true"^^xsd:boolean
+  SubPropertyOf: skos:changeNote
+  Range: FormerlyNote
+
+# FIXME currently also used to express that some concepts are just placeholders for DDC concepts (see https://trac.mathweb.org/msc/ticket/50)
+ObjectProperty: scope
+  Annotations: rdfs:label "scope",
+    rdfs:comment "used to restrict the scope of a link to a partitively related concept"
+  SubPropertyOf: skos:scopeNote
+  Domain: ScopeNote
+
+ObjectProperty: matchDewey
+  Annotations: rdfs:label "matches Dewey Decimal Classification concept",
+    rdfs:comment "link to a matching DDC concept (to be used until we know more exactly what kind of match it is, e.g. broad, exact, …)"
+  SubPropertyOf: skos:mappingRelation
+
+Class: FormerlyNote
+  Annotations: rdfs:label "‘Formerly’ note",
+    rdfs:comment "note about former use of a concept"
+
+Class: ScopeNote
+  Annotations: rdfs:label "scope note",
+    rdfs:comment "note about the scope of a concept"
+
+Class: UseScopeNote
+  Annotations: rdfs:label "‘use’ scope note",
+    rdfs:comment "note on what additional classes should be used to classify a concept"
+  SubClassOf: ScopeNote
+  
+Class: NotUseScopeNote
+  Annotations: rdfs:label "‘not use’ scope note",
+    rdfs:comment "note on what classes should not be used to classify a concept"
+  SubClassOf: ScopeNote
+
+Class: MustUseScopeNote
+  Annotations: rdfs:label "‘must use’ scope note",
+    rdfs:comment "note on what additional classes must be used to classify a concept"
+  SubClassOf: ScopeNote
+
+DisjointClasses: UseScopeNote, NotUseScopeNote, MustUseScopeNote
+
+Class: SemanticRelation
+  Annotations: rdfs:label "semantic relation",
+    rdfs:comment "superclass of all MSC-specific types of reified links"
+
+Class: SeeForLink
+  Annotations: rdfs:label "‘see for’ link",
+    rdfs:comment "reified link from one concept to a partitively related concept"
+  SubClassOf: SemanticRelation
+
+Datatype: MSCNotation
+  Annotations: rdfs:label "MSC notation",
+    rdfs:comment "an MSC notation"
+  EquivalentTo: string[pattern "[0-9]{2}([A-Z-][0-9]{2}|-XX|[A-Z]xx)"]
+
