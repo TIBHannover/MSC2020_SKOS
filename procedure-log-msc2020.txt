@@ -11,6 +11,7 @@ The current version is available at <https://github.com/runnwerth/MSC2020_SKOS/b
 [[_TOC_]]
 
 ## General information on the 2010 SKOS version of MSC and its creation
+
 Legacy modelling decisions for the MSC 2010 SKOS version are described in the following papers:
 
 - Christoph Lange, Patrick Ion, Anastasia Dimou, Charalampos Bratsas, Wolfram Sperber, Michael Kohlhase, and Ioannis Antoniou: Bringing Mathematics to the Web of Data: The Case of the Mathematics Subject Classification. In: E. Simperl et al. (Eds.): ESWC 2012, LNCS 7295, pp. 763–777, 2012 .
@@ -19,6 +20,7 @@ Legacy modelling decisions for the MSC 2010 SKOS version are described in the fo
 These were followed wherever possible.
 
 ## Input for the SKOS version of MSC 2020 
+
 The input for creating the SKOS was an export from the [x] database provided by [x] as a .xslx-file with the following structure:
 
 ### Sheet 1: MSC 2020
@@ -28,6 +30,7 @@ The input for creating the SKOS was an export from the [x] database provided by 
 | 00-01   | Introductory exposition (textbooks, tutorial papers, etc.) pertaining to mathematics in general   | Introductory exposition (textbooks, tutorial papers, etc.) pertaining to mathematics in general   |
 
 ### Sheet 2: MSC 2010
+
 This sheet was structured just like sheet 1 but containing data from MSC 2010.
 
 ### Sheet 3: Transformation
@@ -49,17 +52,20 @@ We used OpenRefine to create all the basic triples for the MSC 2020. The output 
 
 Some additions have been made with Protégé's SPARQL-Plug-In snap. The respective queries are documented in the .ttl-file as `rdfs:comment` of `msc:`.
 
-\#\#\# To Do \#\#\# 
-- tbd: add OpenRefine user documentation and basic grel-tutorials
-- tbd: add stuff you should know about OpenRefine here or at appropriate places, e.g. facets and filters (are documented in the json)
+Introduction and materials related to the used tools:  
 
-\#\#\# To Do \#\#\# 
+- [OpenRefine user documentation](https://docs.openrefine.org/)
+- [General Refine Expression Language (GREL)](https://docs.openrefine.org/manual/expressions#grel-general-refine-expression-language)
+- [GREL Functions](https://docs.openrefine.org/manual/grelfunctions)
+- [Introduction to Open Refine by the Library of Illinois](https://guides.library.illinois.edu/openrefine/grel)
+- [Introduction to Open Refine at programminghistorian.org](https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine)
 
 ## Definition of modelling tasks
 
 To create a complete SKOS version of MSC 2020 that resembles the structure of MSC 2020 requires to perform the following tasks:
 
 Task 0: Set up a basic .tt-file.
+
 - declaration of namespaces
 - declaration of imports
 - declaration of metadata
@@ -83,6 +89,7 @@ Task 4: Historical references [still open, see <https://github.com/runnwerth/MSC
 - create links between MSC 2020 concepts and MSC 2010 and add descriptions of the changes
 
 Task 5: Create collections
+
 - create instances of skos:Collection and define which are its `skos:member`.
 
 Q1: The tasks have not been performed in that order, which is why some of the OpenRefine operations documented below are not given in a consecutive order (e.g. *Task2: Concept hierarchy* has been done after introducing a filter criterium for *Task 3: Internal references* so that Step 7 will be described after Steps 8-x). Is that confusing?
