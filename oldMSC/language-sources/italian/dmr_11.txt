@@ -1,0 +1,682 @@
+01-XX	 history and biography    908   920
+01A16	 Egyptian    932
+01A17	 Babylonian    935
+01A20	 Greek, Roman    937   938
+01A25	 China    931   951
+01A27	 Japan    952
+01A30	 Islam (Medieval)    955   956   958   960
+01A32	 India    934
+03-XX	 mathematical logic and foundations    511.3
+03A05	 philosophical and critical    510.1   511.2
+03B52	 fuzzy logic; logic of vagueness    511.324
+03Bxx	 general logic    511.3
+03Cxx	 model theory    511.3
+03Dxx	 computability and recursion theory    511.35
+03E20	 other classical set theory (including functions, relations, and set algebra)    511.6
+03E72	 fuzzy set theory    511.324
+03Exx	 set theory    511.322
+03Fxx	 proof theory and constructive mathematics    511.3
+03Gxx	 algebraic logic    511.33
+03Hxx	 nonstandard models    511.3
+05-XX	 combinatorics    511.6
+05A05	 combinatorial choice problems (subsets, representatives, permutations)    511.64   511.65
+05A16	 asymptotic enumeration    511.62
+05A17	 partitions of integers    512.73
+05Axx	 classical combinatorial problems    511.6
+05B05	 block designs    516.13
+05B25	 finite geometries    516.13
+05B30	 other designs, configurations    516.13
+05B35	 matroids, geometric lattices    516.13
+05B40	 packing and covering    516.13
+05B45	 tessellation and tiling problems    516.13
+05Bxx	 designs and configurations    511.6
+05C25	 graphs and groups    512.2
+05C55	 generalized Ramsey theory    511.6
+05Cxx	 graph theory    511.5
+05Dxx	 extremal combinatorics    511.6
+05E10	 tableaux, representations of the symmetric group    512.2
+05E15	 combinatorial problems concerning the classical groups    512.2
+05E35	 orthogonal polynomials    515.9
+05Exx	 algebraic combinatorics    511.6
+06-XX	 order, lattices, ordered algebraic structures    511.33
+06Axx	 ordered sets    511.33
+06B30	 topological lattices, order topologies    512.55
+06B35	 continuous lattices and posets, applications    512.55
+06Bxx	 lattices    511.33
+06Cxx	 modular lattices, complemented lattices    511.33
+06Dxx	 distributive lattices    511.33
+06E20	 ring-theoretic properties    512.55
+06Exx	 Boolean algebras (Boolean rings)    511.324
+06F15	 ordered groups    512.2
+06F20	 ordered Abelian groups, Riesz groups, ordered linear spaces    512.2
+06F25	 ordered rings, algebras, modules    512.4   512.55
+06Fxx	 ordered structures    511.33   512.2
+08-XX	 general algebraic systems    511.3   512.02
+08Axx	 algebraic structures    512.2
+08Bxx	 varieties    511.33   512.02
+08C05	 categories of algebras    512.55
+08Cxx	 other classes of algebras    511.3   512.02
+11-XX	 number theory    512.7
+11Axx	 elementary number theory    512.72
+11Bxx	 sequences and sets    512.72
+11C20	 matrices, determinants    512.943
+11Cxx	 polynomials and matrices    512.5
+11Dxx	 Diophantine equations    512.72
+11E04	 quadratic forms over general fields    512.74
+11E08	 quadratic forms over local rings and fields    512.74
+11E10	 forms over real fields    512.74
+11E12	 quadratic forms over global rings and fields    512.74
+11E16	 general binary quadratic forms    512.74
+11E20	 general ternary and quaternary quadratic forms; forms of more than two variables    512.74
+11E25	 sums of squares and representations by other particular quadratic forms    512.74
+11E39	 bilinear and Hermitian forms    512.5
+11E70	 $K$-theory of quadratic and Hermitian forms    512.55
+11Exx	 forms and linear algebraic groups    512.944
+11Fxx	 discontinuous groups and automorphic forms    512.73   515.98
+11Gxx	 arithmetic algebraic geometry (Diophantine geometry)    512.7   516.35
+11Hxx	 geometry of numbers    512.75
+11Jxx	 Diophantine approximation, transcendental number theory    512.73
+11Kxx	 probabilistic theory: distribution modulo $1$; metric theory of algorithms    512.76
+11Lxx	 exponential sums and character sums    512.7
+11Mxx	 zeta and $L$-functions: analytic theory    512.73
+11Nxx	 multiplicative number theory    512.73
+11P81	 elementary theory of partitions    511.6   515.243
+11P82	 analytic theory of partitions    515.243
+11P83	 partitions; congruences and congruential restrictions    515.243
+11Pxx	 additive number theory; partitions    512.74
+11R32	 Galois theory    512.3
+11R33	 integral representations related to algebraic numbers; Galois module structure of rings of integers    512.3
+11R34	 Galois cohomology    512.3
+11R52	 quaternion and other division algebras: arithmetic, zeta functions    512.5
+11Rxx	 algebraic number theory: global fields    512.74
+11S20	 Galois theory    512.3
+11S25	 Galois cohomology    512.3
+11S45	 algebras and orders, and their zeta functions    511.33
+11S70	 $K$-theory of local fields    512.3
+11Sxx	 algebraic number theory: local and $p$-adic fields    512.74
+11Txx	 finite fields and commutative rings (number-theoretic aspects)    512.74
+11Uxx	 connections with logic    511.3
+11Z05	 miscellaneous applications of number theory    512.7
+12-XX	 field theory and polynomials    512.3   512.94
+12Dxx	 real and complex fields    512.3
+12Exx	 general field theory    512.3
+12Fxx	 field extensions    512.3   512.74
+12Gxx	 homological methods (field theory)    512.55
+12Hxx	 differential and difference algebra    512.56
+12Jxx	 topological fields    512.55   512.74
+12Kxx	 generalizations of fields    512.02
+12Lxx	 connections with logic    511.3
+13-XX	 commutative rings and algebras    512.4
+13Axx	 general commutative ring theory    512.2   512.4
+13Bxx	 ring extensions and related topics    512.4
+13Cxx	 theory of modules and ideals    512.4
+13Dxx	 homological methods    512.55
+13Exx	 chain conditions, finiteness conditions    512.4
+13Fxx	 arithmetic rings and other special rings    512.4
+13G05	 integral domains    512.4
+13Hxx	 local rings and semilocal rings    512.4
+13Jxx	 topological rings and modules    512.55
+13K05	 Witt vectors and related rings    512.5
+13L05	 applications of logic to commutative algebra    511.3
+13Mxx	 finite commutative rings    512.4   512.74
+13Nxx	 differential algebra    512.56
+14-XX	 algebraic geometry    516.35
+14Axx	 foundations    516.35
+14Bxx	 local theory    516.35
+14Cxx	 cycles and subschemes    516.35
+14Dxx	 families, fibrations    516.35
+14Exx	 birational geometry    516.35
+14F30	 $p$-adic cohomology, crystalline cohomology    512.74
+14G15	 finite ground fields    512.3
+14G20	 local ground fields    512.3   512.74
+14G25	 global ground fields    512.3
+14Gxx	 arithmetic problems. Diophantine geometry    512.72
+14Hxx	 curves    516.352
+14Jxx	 surfaces and higher-dimensional varieties    516.353
+14K15	 arithmetic ground fields    512.74
+14Kxx	 Abelian varieties and schemes    516.35
+14Lxx	 algebraic groups    512.2   516.35
+14M05	 varieties defined by ring conditions (factorial, Cohen - Macaulay, seminormal)    512.4
+14Mxx	 special varieties    516.35
+14Nxx	 projective and enumerative geometry    516.4   516.5   516.6
+15-XX	 linear and multilinear algebra; matrix theory    512.5
+15A03	 vector spaces, linear dependence, rank    512.52
+15A04	 linear transformations, semilinear transformations    512.52
+15A06	 linear equations    512.943
+15A09	 matrix inversion, generalized inverses    512.943
+15A12	 conditioning of matrices    512.943
+15A15	 determinants, permanents, other special matrix functions    512.943
+15A18	 eigenvalues, singular values, and eigenvectors    512.943
+15A21	 canonical forms, reductions, classification    512.943
+15A22	 matrix pencils    512.943
+15A23	 factorization of matrices    512.943
+15A24	 matrix equations and identities    512.943
+15A27	 commutativity    512.943
+15A30	 algebraic systems of matrices    512.943
+15A33	 matrices over special rings (quaternions, finite fields, etc.)    512.943
+15A36	 matrices of integers    512.943
+15A39	 linear inequalities    512.943
+15A42	 inequalities involving eigenvalues and eigenvectors    512.943
+15A45	 miscellaneous inequalities involving matrices    512.943
+15A48	 positive matrices and their generalizations; cones of matrices    512.943
+15A51	 stochastic matrices    512.943
+15A52	 random matrices    512.943
+15A54	 matrices over function rings in one or more variables    512.943
+15A57	 other types of matrices (Hermitian, skew-Hermitian, etc.)    512.943
+15A60	 norms of matrices, numerical range, applications of functional analysis to matrix theory    512.943
+15A63	 quadratic and bilinear forms, inner products    512.74
+15A66	 Clifford algebras, spinors    512.57
+15A69	 multilinear algebra, tensor products    512.57
+15A72	 vector and tensor algebra, theory of invariants    512.57
+15A75	 exterior algebra, Grassmann algebras    512.57
+16-XX	 associative rings and algebras    512.4
+16B50	 category-theoretic methods and results    512.55
+16B70	 applications of logic    511.3
+16Dxx	 modules, bimodules and ideals    512.4
+16Exx	 homological methods    512.55
+16Gxx	 representation theory of rings and algebras    512.4
+16H05	 orders and arithmetic, separable algebras, Azumaya algebras    512.74
+16Kxx	 division rings and semisimple Artin rings    512.4
+16Lxx	 local rings and generalizations    512.4
+16Nxx	 radicals and radical properties of rings    512.4
+16Pxx	 chain conditions, growth conditions, and other forms of finiteness    512.4
+16Rxx	 rings with polynomial identity    512.944
+16Sxx	 rings and algebras arising under various constructions    512.4
+16Uxx	 conditions on elements    512.4
+16Wxx	 rings and algebras with additional structure    512.4
+16Yxx	 generalizations    512.4
+17-XX	 nonassociative rings and algebras    512.24
+17Axx	 general nonassociative rings    512.24
+17Bxx	 Lie algebras and Lie superalgebras    512.55
+17Cxx	 Jordan algebras (algebras, triples and pairs)    512.24
+17Dxx	 other nonassociative rings and algebras    512.24
+18-XX	 category theory; abstract homological algebra    512.55
+18A15	 foundations, relations to logic and deductive systems    511.3
+18Axx	 general theory of categories and functors    512.55
+18Bxx	 special categories    512.55
+18Cxx	 categories and theories    512.55
+18Dxx	 categories with structure    512.55
+18F15	 abstract manifolds and fiber bundles    514.224
+18F20	 presheaves and sheaves    514.224
+18F25	 algebraic $K$-theory and $L$-theory    514.23
+18Fxx	 categories and geometry    512.55
+18Gxx	 abstract homological algebra    512.55
+19-XX	 $K$-theory    512.55
+19Axx	 Grothendieck groups and $K_0$    512.55
+19Bxx	 Whitehead groups and $K_1$    512.55
+19Cxx	 Steinberg groups and $K_2$    512.55
+19D10	 algebraic $K$-theory of spaces    512.55
+19Exx	 $K$-theory in geometry    512.55
+19Fxx	 $K$-theory in number theory    512.74
+19Gxx	 $K$-theory of forms    512.55
+19Jxx	 obstructions from topology    514.2
+19Kxx	 $K$-theory and operator algebras    512.55
+19Lxx	 topological $K$-theory    514.2
+20-XX	 group theory and generalizations    512.2
+20Axx	 foundations    511.3   512.2
+20Bxx	 permutation groups    512.2
+20C11	 $p$-adic representations of finite groups    512.74
+20Cxx	 representation theory of groups    512.2
+20D60	 arithmetic and combinatorial problems    511.6   512.74
+20Dxx	 abstract finite groups    512.2
+20Exx	 structure and classification of infinite or finite groups    512.2
+20F10	 word problems, other decision problems, connections with logic and automata    511.3
+20F36	 braid groups; Artin groups    514.224
+20F38	 other groups related to topology or analysis    512.55   514.2
+20F40	 associated Lie structures    512.55
+20Fxx	 special aspects of infinite or finite groups    512.2
+20Gxx	 linear algebraic groups (classical groups)    512.2   512.5
+20Jxx	 connections with homological algebra and category theory    512.55
+20Kxx	 Abelian groups    512.2
+20L05	 groupoids (i.e. small categories in which all morphisms are isomorphisms)    512.55
+20M05	 free semigroups, generators and relations, word problems    511.3
+20Mxx	 semigroups    512.2
+20Nxx	 other generalizations of groups    512.02   512.2
+20P05	 probabilistic methods in group theory    519.26
+22-XX	 topological groups, Lie groups    512.55
+22Axx	 topological and differentiable algebraic systems    512.55
+22Bxx	 locally compact Abelian groups (LCA groups)    512.55
+22Dxx	 locally compact groups and their algebras    512.55
+22Exx	 Lie groups    512.55
+26-XX	 real functions    515   515.8
+26Axx	 functions of one variable    515.83
+26Bxx	 functions of several variables    515.84
+26Cxx	 polynomials, rational functions    515.825
+26Dxx	 inequalities    515.826
+26Exx	 miscellaneous topics    515.8
+28-XX	 measure and integration    515   515.42
+28A60	 measures on Boolean rings, measure algebras    511.324
+28A80	 fractals    515.35
+28Bxx	 set functions, measures and integrals with values in abstract spaces    515.783
+28Cxx	 set functions and measures on spaces with additional structure    515.783
+28Dxx	 measure-theoretic ergodic theory    515.42
+28E10	 fuzzy measure theory    511.324
+28Exx	 miscellaneous topics in measure theory    511.3   515.42
+30-XX	 functions of a complex variable    515   515.9   515.93
+30A10	 inequalities in the complex domain    515.926
+30Bxx	 series expansions    515.9234
+30Cxx	 geometric function theory    516.35
+30Dxx	 entire and meromorphic functions, and related topics    515.98
+30E10	 approximation in the complex domain    511.4
+30E20	 integration, integrals of Cauchy type, integral representations of analytic functions    515.43
+30E25	 boundary value problems    515.35
+30F35	 Fuchsian groups and automorphic functions    515.98
+30Fxx	 Riemann surfaces    515.9223
+30Gxx	 generalized function theory    515.98
+30H05	 spaces and algebras of analytic functions    515.9223
+31-XX	 potential theory    515   515.9
+31Axx	 two-dimensional theory    515.9
+31Bxx	 higher-dimensional theory    515.9
+31Cxx	 other generalizations    515.9
+31D05	 axiomatic potential theory    515.9
+32-XX	 several complex variables and analytic spaces    515   515.9   515.94
+32A05	 power series, series of functions    515.9243
+32A15	 entire functions    515.98
+32A17	 special families of functions    515.98
+32A20	 meromorphic functions    515.982
+32A22	 Nevanlinna theory (local); growth estimates; other inequalities    515.926
+32Bxx	 local analytic geometry    515.94
+32Cxx	 analytic spaces    515.9223
+32Fxx	 geometric convexity    515.7242
+32Gxx	 deformations of analytic structures    515.98
+32H04	 meromorphic mappings    515.982
+32Jxx	 compact analytic spaces    515.9223
+32Kxx	 generalizations of analytic spaces    515.9223
+32Lxx	 holomorphic fiber spaces    514.224   515.9223
+32Mxx	 complex spaces with a group of automorphisms    512.55   515.9223
+32Nxx	 automorphic functions    515.9
+32S25	 surface and hypersurface singularities    515.35
+32Sxx	 singularities    515.35   515.36   515.9
+33-XX	 special functions    515   515.5
+33B10	 exponential and trigonometric functions    516.34
+33Bxx	 elementary classical functions    515.52
+33Cxx	 hypergeometric functions    515.55
+33D05	 $q$-gamma functions, $q$-beta functions and integrals    515.984
+33Dxx	 basic hypergeometric functions    515.55
+33E05	 elliptic functions and integrals    515.983
+33E10	 Lam\'e, Mathieu, and spheroidal wave functions    515.54
+33Exx	 other special functions    515.5
+34-XX	 ordinary differential equations    515   515.352
+34A40	 differential inequalities    515.36
+34Axx	 general theory    515.35
+34Bxx	 boundary value problems    515.35
+34Cxx	 qualitative theory    515.352
+34Dxx	 stability theory    515.35
+34Exx	 asymptotic theory    515.35
+34F05	 equations and systems with randomness    519.2
+34Gxx	 differential equations in abstract spaces    515.35
+34H05	 control problems    515.64   629.8312
+34Kxx	 functional-differential and differential-difference equations    515.35   515.38
+34Lxx	 ordinary differential operators    515.7242
+35-XX	 partial differential equations    515   515.353
+35Axx	 general theory    515.35
+35Bxx	 qualitative properties of solutions    515.35
+35Cxx	 representations of solutions    515.35
+35Dxx	 generalized solutions of partial differential equations    515.353
+35Exx	 equations and systems with constant coefficients    515.353
+35Fxx	 general first-order equations and systems    515.353
+35Gxx	 general higher-order equations and systems    515.353
+35Hxx	 close-to-elliptic equations    515.353
+35J85	 unilateral problems and variational inequalities for elliptic PDE    515.36
+35Jxx	 partial differential equations of elliptic type    515.353
+35Kxx	 parabolic equations and systems    515.353
+35Lxx	 partial differential equations of hyperbolic type    515.353
+35Mxx	 partial differential equations of special type (mixed, composite, etc.)    515.353
+35Pxx	 spectral theory and eigenvalue problems for partial differential operators    515.7222   515.724
+35Rxx	 miscellaneous topics involving partial differential equations    515.353   515.38
+35Sxx	 pseudodifferential operators and other generalizations of partial differential operators    515.7242
+37-XX	 dynamical systems and ergodic theory    515
+39-XX	 difference and functional equations    515   515.625
+39Axx	 difference equations    515.625
+40-XX	 sequences, series, summability    515   515.24
+40Axx	 convergence and divergence of infinite limiting processes    515.24
+40Cxx	 general summability methods    515.243
+40Dxx	 direct theorems on summability    515.243
+40Exx	 inversion theorems    515.24
+40Gxx	 special methods of summability    515.243
+40H05	 functional analytic methods in summability    515.243
+40J05	 summability in abstract structures    515.243
+41-XX	 approximations and expansions    511.4   515   515.234
+42-XX	 Fourier analysis    515   515.2433
+43-XX	 abstract harmonic analysis    515.785
+44-XX	 integral transforms, operational calculus    515   515.72
+44A05	 general transforms    515.723
+44A10	 Laplace transform    515.723
+44A12	 Radon transform    515.723
+44A15	 special transforms (Legendre, Hilbert, etc.)    515.723
+44A20	 transforms of special functions    515.723
+44A30	 multiple transforms    515.723
+45-XX	 integral equations    515   515.45
+45J05	 integro-ordinary differential equations    515.38
+45K05	 integro-partial differential equations    515.38
+46-XX	 functional analysis    515   515.7
+46Axx	 topological linear spaces and related structures    515.73
+46Bxx	 normed linear spaces and Banach spaces; Banach lattices    515.732
+46Cxx	 inner product spaces and their generalizations, Hilbert spaces    515.733
+46Exx	 linear function spaces and their duals    515.73   515.782
+46Fxx	 distributions, generalized functions, distribution spaces    515.782
+46Gxx	 measures, integration, derivative, holomorphy (all involving infinite-dimensional spaces)    515.42
+46Hxx	 topological algebras, normed rings and algebras, Banach algebras    512.55
+46Jxx	 commutative Banach algebras and commutative topological algebras    512.55
+46Kxx	 topological (rings and) algebras with an involution    512.55
+46Lxx	 selfadjoint operator algebras ($C^*$-algebras, von_Neumann ($W^*$-) algebras, etc.)    512.55
+46Mxx	 methods of category theory in functional analysis    512.55
+47-XX	 operator theory    515   515.724   515.7242
+47Axx	 general theory of linear operators    515.7246
+47Bxx	 special classes of linear operators    515.7246
+47Cxx	 individual linear operators as elements of algebraic systems    512.55   515.723
+47Dxx	 groups and semigroups of linear operators, their generalizations and applications    512.55   515.7246
+47E05	 ordinary differential operators    515.7242
+47F05	 partial differential operators    515.7242
+47Gxx	 integral, integro-differential, and pseudodifferential operators    515.723
+47Hxx	 nonlinear operators and their properties    515.7248
+47Nxx	 miscellaneous applications of operator theory    515.724
+47S50	 operator theory in probabilistic metric linear spaces    519.2
+47Sxx	 other (nonclassical) types of operator theory    515.724
+49-XX	 calculus of variations and optimal control; optimization    515   515.64
+49Jxx	 existence theories    515.64
+49Kxx	 necessary conditions and sufficient conditions for optimality    515.64
+49Lxx	 Hamilton - Jacobi theories, including dynamic programming    515.7
+49M37	 methods of nonlinear programming type    519.76
+49Mxx	 methods of successive approximations    515.64
+51-XX	 geometry    516
+51Axx	 linear incidence geometry    516.12
+51Bxx	 nonlinear incidence geometry    516.12
+51D20	 combinatorial geometries    511.6   516.13
+51Dxx	 geometric closure systems    516.35
+51Exx	 finite geometry and special incidence structures    511.6   516.13
+51F25	 orthogonal and unitary groups    512.2
+51Fxx	 metric geometry    516.1
+51G05	 ordered geometries (ordered incidence structures, etc.)    511.33
+51H10	 topological linear incidence structures    516.12
+51H15	 topological nonlinear incidence structures    516.12
+51H20	 topological geometries on manifolds    516.07   516.36
+51H25	 geometries with differentiable structure    516.07   516.36
+51H30	 geometries with algebraic manifold structure    516.07   516.36
+51Hxx	 topological geometry    516
+51J10	 projective incidence groups    516.5
+51Jxx	 incidence groups    512.2   516.12
+51Kxx	 distance geometry    516.36
+51Lxx	 geometric order structures    516.36
+51M04	 elementary problems in Euclidean geometries    516.2
+51M05	 Euclidean geometries (general) and generalizations    516.2   516.3
+51M09	 elementary problems in hyperbolic and elliptic geometries    516.9
+51M10	 hyperbolic and elliptic geometries (general) and generalizations    516.9
+51M16	 inequalities and extremum problems    516.17
+51M20	 polyhedra and polytopes; regular figures, division of spaces    516.15   516.35
+51M25	 length, area and volume    515.4
+51M30	 line geometries and their generalizations    516.183
+51M35	 synthetic treatment of fundamental manifolds in projective geometries (Grassmannians, Veronesians and their generalizations)    516.07   516.36   516.5
+51Mxx	 real and complex geometry    516.2   516.3   516.9
+51N05	 descriptive geometry    516.6
+51N10	 affine analytic geometry    516.4
+51N15	 projective analytic geometry    516.5
+51N20	 Euclidean analytic geometry    516.3
+51N25	 analytic geometry with other transformation groups    512.2   512.55   516.35
+51N30	 geometry of classical groups    512.2   512.55   516.35
+51N35	 questions of classical algebraic geometry    512.2   516.35
+51Nxx	 analytic and descriptive geometry    516.3   516.6
+52-XX	 convex and discrete geometry    516.08
+52A07	 convex sets in topological vector spaces    515.73
+52A10	 convex sets in $2$ dimensions (including convex curves)    515.36
+52A15	 convex sets in $3$ dimensions (including convex surfaces)    515.36
+52A20	 convex sets in $n$ dimensions (including convex hypersurfaces)    515.36
+52A21	 finite-dimensional Banach spaces (including special norms, zonoids, etc.)    515.732
+52A22	 random convex sets and integral geometry    516.362   519.2
+52A37	 other problems of combinatorial convexity    511.6
+52A38	 length, area, volume    515.4
+52A40	 inequalities and extremum problems    516.17
+52A41	 convex functions and convex programs    516.362   519.76
+52A55	 spherical and hyperbolic convexity    516.362
+52B05	 combinatorial properties (number of faces, shortest paths, etc.)    511.6   516.13
+52Bxx	 polytopes and polyhedra    516.15   516.35
+52Cxx	 discrete geometry    512.75   516.35
+53-XX	 differential geometry    516.36   516.37
+53A04	 curves in Euclidean space    516.372
+53A05	 surfaces in Euclidean space    516.372
+53A07	 higher-dimension and higher-codimension surfaces in Euclidean $n$-space    516.372
+53A45	 vector and tensor analysis    515.63   516.182
+53Axx	 classical differential geometry    516.182
+53Bxx	 local differential geometry    516.36   516.37
+53C12	 foliations (differential geometric aspects)    514.72
+53C15	 general geometric structures on manifolds (almost complex, almost product structures, etc.)    516.07
+53C20	 global Riemannian geometry, including pinching    516.373
+53C21	 methods of Riemannian geometry, including PDE methods; curvature restrictions    516.373
+53C25	 special Riemannian manifolds (Einstein, Sasakian, etc.)    516.373
+53C60	 Finsler spaces and generalizations (areal metrics)    516.375
+53C65	 integral geometry    516.362
+53Cxx	 global differential geometry    516.36   516.37
+54-XX	 general topology    511.33   514
+54A25	 cardinality properties (cardinal functions and inequalities, discrete subsets)    511.32
+54Axx	 generalities    514
+54B30	 categorical methods    512.55   514.224
+54B40	 presheaves and sheaves    512.55   514.224
+54C15	 retraction    514.24
+54C35	 function spaces    515.73
+54C40	 algebraic properties of function spaces    512.55
+54C55	 absolute neighborhood extensor, absolute extensor, absolute neighborhood retract (ANR), absolute retract spaces (general properties)    514.24
+54C56	 shape theory    516.15
+54Cxx	 maps and general types of spaces defined by maps    511.33
+54Dxx	 fairly general properties    514
+54Exx	 spaces with richer structures    514
+54F05	 linearly ordered topological spaces, partially ordered spaces, and partially ordered spaces    511.33
+54F45	 dimension theory    516
+54Fxx	 special properties    514
+54Gxx	 peculiar spaces    514
+54H05	 descriptive set theory (topological aspects of Borel, analytic, projective, etc. sets)    511.3
+54H10	 topological representations of algebraic systems    512.55
+54H11	 topological groups    512.55
+54H13	 topological fields, rings, etc.    512.55
+54H15	 transformation groups and semigroups    512.55
+54H20	 topological dynamics    515.352
+55-XX	 algebraic topology    514.2
+55M10	 dimension theory    516
+55Mxx	 classical topics    514.2
+55Nxx	 homology and cohomology theories    514.23
+55P55	 shape theory    516.15
+55Pxx	 homotopy theory    514.24
+55Qxx	 homotopy groups    512.55   514.24
+55Rxx	 fiber spaces and bundles    514.224
+55Sxx	 operations and obstructions    514.23
+55Txx	 spectral sequences    514.23
+55Uxx	 applied homological algebra and category theory    512.55   514.23
+57-XX	 manifolds and cell complexes    514.223   514.3
+57M05	 fundamental group, presentations, free differential calculus    512.55
+57M07	 topological methods in group theory    512.55
+57M15	 relations with graph theory    511.5
+57Mxx	 low-dimensional topology    514.223
+57Nxx	 topological manifolds    514.223   514.3
+57Pxx	 generalized manifolds    514.223   514.3
+57Qxx	 PL-topology    514.223   514.3
+57Rxx	 differential topology    514.72
+57Sxx	 topological transformation groups    512.55
+57Txx	 homology and homotopy of topological groups and related structures    512.55   514.23   514.24
+58-XX	 global analysis, analysis on manifolds    514.7   514.74   515
+58Cxx	 calculus on manifolds; nonlinear operators    515.7248
+58D05	 groups of diffeomorphisms and homeomorphisms as manifolds    512.55   515.73
+58D07	 groups and semigroups of nonlinear operators    512.55   515.73
+58Dxx	 spaces and manifolds of mappings    515.73
+58Exx	 variational problems in infinite-dimensional spaces    515.64   515.73
+58Hxx	 pseudogroups, differentiable groupoids and general structures on manifolds    512.55
+60-XX	 probability theory and stochastic processes    519.2
+60Axx	 foundations of probability theory    519.2
+60Bxx	 probability theory on algebraic and topological structures    519.26
+60C05	 combinatorial probability    511.6   519.2
+60D05	 geometric probability, stochastic geometry, random sets    519.2
+60Exx	 distribution theory    519.24
+60G10	 stationary processes    519.232
+60G42	 martingales with discrete parameter    519.287
+60G44	 martingales with continuous parameter    519.287
+60G46	 martingales and classical analysis    519.287
+60G50	 sums of independent random variables; random walks    519.282
+60Gxx	 stochastic processes    519.23
+60Hxx	 stochastic analysis    519.2
+60J80	 branching processes (Galton - Watson, birth-and-death, etc.)    519.24
+60J85	 applications of branching processes    519.24
+60Jxx	 Markov processes    519.233   519.282
+60K05	 renewal theory    519.287
+60K10	 applications (reliability, demand theory, etc.)    519.287
+60K15	 Markov renewal processes, semi-Markov processes    519.287
+60K20	 applications of Markov renewal processes (reliability, queueing networks, etc.)    519.287
+60K25	 queueing theory    519.82
+60K30	 applications (congestion, allocation, storage, traffic, etc.)    519.82
+62-07	 data analysis    001.4225
+62-XX	 statistics    519.5
+62A01	 foundational and philosophical topics    519.5
+62Bxx	 sufficiency and information    519.54
+62Cxx	 decision theory    519.542
+62D05	 sampling theory, sample surveys    519.52
+62Exx	 distribution theory    519.24   519.532
+62F03	 hypothesis testing    519.56
+62F10	 point estimation    519.544
+62F12	 asymptotic properties of estimators    519.544
+62Fxx	 parametric inference    519.54   519.544
+62G05	 estimation    519.544
+62G07	 density estimation    519.544
+62G10	 hypothesis testing    519.56
+62G30	 order statistics; empirical distribution functions    519.532
+62Gxx	 nonparametric inference    519.54
+62H12	 estimation    519.544
+62H15	 hypothesis testing    519.56
+62H20	 measures of association (correlation, canonical correlation, etc.)    519.537
+62H25	 factor analysis and principal components; correspondence analysis    519.5354
+62H30	 classification and discrimination; cluster analysis    519.53
+62Hxx	 multivariate analysis    519.535
+62J10	 analysis of variance and covariance    519.538
+62Jxx	 linear inference, regression    519.536
+62Kxx	 design of experiments    511.6
+62Lxx	 sequential methods    519.54
+62M02	 Markov processes: hypothesis testing    519.233   519.56
+62M05	 Markov processes: estimation    519.233   519.544
+62M07	 non-Markovian processes: hypothesis testing    519.23   519.56
+62M09	 non-Markovian processes: estimation    519.23   519.544
+62M10	 time series, auto-correlation, regression, etc.    519.55
+62M20	 prediction    519.287
+62Mxx	 inference from stochastic processes    519.54
+62N05	 reliability and life testing    519.287
+62Nxx	 survival analysis and censored data    519.287   519.86
+62Q05	 statistical tables    001.422
+65-XX	 numerical analysis    511.4
+65Bxx	 acceleration of convergence    515.243
+65Cxx	 probabilistic methods, simulation and stochastic differential equations    519.4
+65D20	 computation of special functions, construction of tables    515.5
+65D25	 numerical differentiation    515.623
+65D30	 numerical integration    515.624
+65Dxx	 numerical approximation and computational geometry (primarily algorithms)    511.4
+65E05	 numerical methods in complex analysis (potential theory, etc.)    515.9232
+65Fxx	 numerical linear algebra    512.5
+65Gxx	 error analysis and interval analysis    511.43
+65Hxx	 nonlinear algebraic or transcendental equations    512.94
+65J10	 equations with linear operators    515.7242
+65J15	 equations with nonlinear operators    515.7246
+65Jxx	 numerical analysis in abstract spaces    515.724
+65Kxx	 mathematical programming, optimization and variational techniques    515.64   519.7
+65Lxx	 ordinary differential equations    515.352
+65Mxx	 partial differential equations, initial value and time-dependent initial-boundary value problems    515.353
+65Nxx	 partial differential equations, boundary value problems    515.353
+65Pxx	 numerical problems in dynamical systems    515.353
+65Q05	 difference and functional equations, recurrence relations    515.38   515.625
+65R10	 integral transforms    515.45
+65R20	 integral equations    515.723
+65Rxx	 integral equations, integral transforms    515.45   515.723
+65S05	 graphical methods    511.5
+65T50	 discrete and fast Fourier transforms    515.723
+65Txx	 numerical methods in Fourier analysis    515.2433
+68-XX	 computer science    004   005   006
+68M01	 general    004.0151
+68M07	 mathematical problems of computer architecture    004.22
+68M10	 network design and communication    004.65   004.68
+68M15	 reliability, testing and fault tolerance    004.24
+68M20	 performance evaluation; queueing; scheduling    004.21
+68Mxx	 computer system organization    004
+68N01	 general    005.101
+68N15	 programming languages    005.13   005.133   005.136
+68N17	 logic programming    005.11   005.115   005.131
+68N18	 functional programming and lambda calculus    005.11   005.114
+68N19	 other progamming techniques (object-oriented, sequential, concurrent, automatic, etc.)    005.11   005.112   005.113   005.117   005.118
+68N20	 compilers and interpreters    005.45
+68N25	 operating systems    005.43   005.44
+68N30	 mathematical aspects of software engineering (specification, verification, metrics, requirements, etc.)    005.131
+68N99	 none of the above, but in this section    005.12
+68Nxx	 software    005
+68P05	 data structures    005.73
+68P10	 searching and sorting    005.741
+68P15	 database theory    005.74
+68P20	 information storage and retrieval    005.74
+68P25	 data encryption    005.82
+68Q05	 models of computation (Turing machines, etc.)    511.3
+68Q10	 modes of computation (nondeterministic, parallel, interactive, probabilistic, etc.)    005.13
+68Q15	 complexity classes (hierarchies, relations among complexity classes, etc.)    511.3
+68Q25	 analysis of algorithms and problem complexity    005.13
+68Q30	 algorithmic information theory (Kolmogorov complexity, etc.)    005.13   519.2
+68Q42	 grammars and rewriting systems    005.131   511.3
+68Q45	 formal languages and automata    005.131   511.3   519.2
+68Q55	 semantics    511.3
+68Q60	 specification and verification (program logics, model checking, etc.)    005.14   005.15
+68Q65	 abstract data types; algebraic specification    005.13   511.3
+68Q70	 algebraic theory of languages and automata    005.131   511.3
+68Q80	 cellular automata    005.131
+68R05	 combinatorics    511.6
+68R10	 graph theory    511.5
+68R15	 combinatorics on words    511.6
+68Rxx	 discrete mathematics in relation to computer science    005
+68T05	 learning and adaptive systems    006.31
+68T10	 pattern recognition, speech recognition    006.4
+68T15	 theorem proving (deduction, resolution, etc.)    511.3
+68T20	 problem solving (heuristics, search strategies, etc.)    006.33
+68T27	 logic in artificial intelligence    006.33   511.3
+68T30	 knowledge representation    006.33
+68T35	 languages and software systems (knowledge-based systems, expert systems, etc.)    006.33
+68T50	 natural language processing    006.35   410.151   415
+68Txx	 artificial intelligence    006.3
+68U05	 computer graphics; computational geometry    006.6
+68U07	 computer-aided design    006.6
+68U10	 image processing    006.42
+68U20	 simulation    519.4
+68Uxx	 computing methodologies and applications    006
+70-XX	 mechanics of particles and systems    531
+74-XX	 mechanics of deformable solids    531
+76-XX	 fluid mechanics    532
+78-XX	 optics, electromagnetic theory    535.14   535.2
+80-XX	 classical thermodynamics, heat transfer    536   536.2   536.7   541.36
+81-XX	 quantum theory    530.12   530.133   535.15
+81R25	 spinor and twistor methods    515.63
+81S25	 quantum stochastic calculus    530.133
+82-XX	 statistical mechanics, structure of matter    530.13
+82B41	 random walks, random surfaces, lattice animals, etc.    519.282
+82C41	 dynamics of random walks, random surfaces, lattice animals, etc.    519.282
+83-XX	 relativity and gravitational theory    530.11
+83C60	 spinor and twistor methods; Newman - Penrose formalism    515.63
+85-XX	 astronomy and astrophysics    520
+86-XX	 geophysics    551
+90-XX	 operations research, mathematical programming    519   519.2   658.4034
+90B05	 inventory, storage, reservoirs    519.83
+90B18	 communication networks    004.5   004.68
+90B22	 queues and service    004.24   519.82
+90B25	 reliability, availability, maintenance, inspection    519.86
+90B35	 scheduling theory, deterministic    004.24
+90B50	 management decision making, including multiple objectives    658.40301
+90B60	 marketing, advertising    339
+90B80	 discrete location and assignment    519.7
+90B85	 continuous location    519.7
+90Bxx	 operations research and management science    003
+90C05	 linear programming    519.72
+90C20	 quadratic programming    519.76
+90C25	 convex programming    519.76
+90C30	 nonlinear programming    519.76
+90Cxx	 mathematical programming    519.7
+91-XX	 game theory, economic, social and behavioral sciences    519.3
+91Axx	 game theory    519.3
+91B05	 decision theory    519.542   658.40301
+91B19	 statistical models; economic indexes and measures    519.5
+91B50	 labor market, contracts    332
+91B53	 special types of economies    339
+91B56	 special types of equilibria    339
+91B58	 models of real-world systems; general macro-economic models, etc.    339
+91B60	 market models (auctions, bargaining, bidding, selling, etc.)    339
+91B70	 macro-economic models (monetary models, models of taxation)    339
+91Bxx	 mathematical economics    330.0151   330.015195   330.1543   332   338   339
+92-XX	 biology and other natural sciences    570
+93-XX	 systems theory; control    003.5   658.4032
+94-XX	 information and communication, circuits    003.5   003.54
+97-XX	 mathematics education    372.7

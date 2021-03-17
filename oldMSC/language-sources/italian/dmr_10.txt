@@ -1,0 +1,242 @@
+001.422	 statistical methods    62Q05
+001.4225	 analysis of data    62-07
+003	 systems    90Bxx
+003.5	 theory of communication and control    93-XX   94-XX
+003.54	 information theory    94-XX
+004	 data processing - computer science    68-XX   68Mxx
+004.0151	 mathematical principles    68M01
+004.21	 systems analysis and design    68M20
+004.22	 computer architecture    68M07
+004.24	 performance evaluation    68M15   90B22   90B35
+004.5	 storage    90B18
+004.65	 communications network architecture    68M10
+004.68	 local-area networks    68M10   90B18
+005	 computer programming, programs, data    68-XX   68Nxx   68Rxx
+005.101	 philosophy and theory    68N01
+005.11	 special programming techniques    68N17   68N18   68N19
+005.112	 modular programming    68N19
+005.113	 structured programming    68N19
+005.114	 functional programming    68N18
+005.115	 logic programming    68N17
+005.117	 object-oriented programming    68N19
+005.118	 visual programming    68N19
+005.12	 program design    68N99
+005.13	 programming languages    68N15   68Q10   68Q25   68Q30   68Q65
+005.131	 symbolic logic ((mathematical logic))    68N17   68N30   68Q42   68Q45   68Q70   68Q80
+005.133	 specific programming languages    68N15
+005.136	 machine and assembly languages    68N15
+005.14	 verification, testing, measurement, debugging    68Q60
+005.15	 preparation of program documentation    68Q60
+005.43	 systems programs - operating systems    68N25
+005.44	 operating systems for specific types of computers    68N25
+005.45	 programming-language translator    68N20
+005.73	 data structures    68P05
+005.74	 data files and databases    68P15   68P20
+005.741	 organization of data files and access methods    68P10
+005.82	 data encryption    68P25
+006	 special computer methods    68-XX   68Uxx
+006.3	 artificial intelligence    68Txx
+006.31	 machine learning    68T05
+006.33	 knowledge representation based systems    68T20   68T27   68T30   68T35
+006.35	 natural language processing    68T50
+006.4	 computer pattern recognition    68T10
+006.42	 optical pattern recognition    68U10
+006.6	 computer graphics    68U05   68U07
+330.0151	 mathematical principles    91Bxx
+330.015195	 statistical mathematics    91Bxx
+330.1543	 mathematical economics    91Bxx
+332	 financial economics    91B50   91Bxx
+338	 production    91Bxx
+339	 macroeconomics & related topics    90B60   91B53   91B56   91B58   91B60   91B70   91Bxx
+372.7	 mathematics    97-XX
+410.151	 mathematical principles    68T50
+415	 structural systems (grammar)    68T50
+510.1	 philosophy and theory    03A05
+511.2	 mathematical systems    03A05
+511.3	 mathematical logic (symbolic logic)    03-XX   03Bxx   03Cxx   03Fxx   03Hxx   08-XX   08Cxx   11Uxx   12Lxx   13L05   16B70   18A15   20Axx   20F10   20M05   28Exx   54H05   68Q05   68Q15   68Q42   68Q45   68Q55   68Q65   68Q70   68T15   68T27
+511.32	 sets    54A25
+511.322	 set theory    03Exx
+511.324	 algebra of sets    03B52   03E72   06Exx   28A60   28E10
+511.33	 relations, lattices, ordered systems and structures    03Gxx   06-XX   06Axx   06Bxx   06Cxx   06Dxx   06Fxx   08Bxx   11S45   51G05   54-XX   54Cxx   54F05
+511.35	 recursion theory    03Dxx
+511.4	 approximations and expansions    30E10   41-XX   65-XX   65Dxx
+511.43	 error analysis    65Gxx
+511.5	 theory and construction of graphs    05Cxx   57M15   65S05   68R10
+511.6	 combinatorial analysis    03E20   05-XX   05Axx   05Bxx   05C55   05Dxx   05Exx   11P81   20D60   51D20   51Exx   52A37   52B05   60C05   62Kxx   68R05   68R15
+511.62	 enumeration    05A16
+511.64	 permutations and combinations    05A05
+511.65	 choice    05A05
+512.02	 abstract algebra    08-XX   08Bxx   08Cxx   12Kxx   20Nxx
+512.2	 groups and group theory    05C25   05E10   05E15   06F15   06F20   06Fxx   08Axx   13Axx   14Lxx   20-XX   20Axx   20Bxx   20Cxx   20Dxx   20Exx   20Fxx   20Gxx   20Kxx   20Mxx   20Nxx   51F25   51Jxx   51N25   51N30   51N35
+512.24	 algebras based on group properties    17-XX   17Axx   17Cxx   17Dxx
+512.3	 fields    11R32   11R33   11R34   11S20   11S25   11S70   12-XX   12Dxx   12Exx   12Fxx   14G15   14G20   14G25
+512.4	 rings    06F25   13-XX   13Axx   13Bxx   13Cxx   13Exx   13Fxx   13G05   13Hxx   13Mxx   14M05   16-XX   16Dxx   16Gxx   16Kxx   16Lxx   16Nxx   16Pxx   16Sxx   16Uxx   16Wxx   16Yxx
+512.5	 linear, multilinear, multidimensional algebras    11Cxx   11E39   11R52   13K05   15-XX   20Gxx   65Fxx
+512.52	 vector spaces    15A03   15A04
+512.55	 topological and related algebras and groups    06B30   06B35   06E20   06F25   08C05   11E70   12Gxx   12Jxx   13Dxx   13Jxx   16B50   16Exx   17Bxx   18-XX   18Axx   18Bxx   18Cxx   18Dxx   18Fxx   18Gxx   19-XX   19Axx   19Bxx   19Cxx   19D10   19Exx   19Gxx   19Kxx   20F38   20F40   20Jxx   20L05   22-XX   22Axx   22Bxx   22Dxx   22Exx   32Mxx   46Hxx   46Jxx   46Kxx   46Lxx   46Mxx   47Cxx   47Dxx   51N25   51N30   54B30   54B40   54C40   54H10   54H11   54H13   54H15   55Qxx   55Uxx   57M05   57M07   57Sxx   57Txx   58D05   58D07   58Hxx
+512.56	 differential and difference algebras    12Hxx   13Nxx
+512.57	 factor algebras    15A66   15A69   15A72   15A75
+512.7	 number theory    11-XX   11Gxx   11Lxx   11Z05
+512.72	 elementary number theory    11Axx   11Bxx   11Dxx   14Gxx
+512.73	 analytic number theory    05A17   11Fxx   11Jxx   11Mxx   11Nxx
+512.74	 algebraic number theory    11E04   11E08   11E10   11E12   11E16   11E20   11E25   11Pxx   11Rxx   11Sxx   11Txx   12Fxx   12Jxx   13Mxx   14F30   14G20   14K15   15A63   16H05   19Fxx   20C11   20D60
+512.75	 geometry of numbers    11Hxx   52Cxx
+512.76	 probabilistic number theory    11Kxx
+512.94	 theory of equations    12-XX   65Hxx
+512.943	 determinants and matrices    11C20   15A06   15A09   15A12   15A15   15A18   15A21   15A22   15A23   15A24   15A27   15A30   15A33   15A36   15A39   15A42   15A45   15A48   15A51   15A52   15A54   15A57   15A60
+512.944	 theory of forms and algebraic invariant theory    11Exx   16Rxx
+514	 topology    54-XX   54Axx   54Dxx   54Exx   54Fxx   54Gxx
+514.2	 algebraic topology    19Jxx   19Lxx   20F38   55-XX   55Mxx
+514.223	 combinatorial elements    57-XX   57Mxx   57Nxx   57Pxx   57Qxx
+514.224	 structures and spaces    18F15   18F20   20F36   32Lxx   54B30   54B40   55Rxx
+514.23	 homology and cohomology theories    18F25   55Nxx   55Sxx   55Txx   55Uxx   57Txx
+514.24	 homotopy theory    54C15   54C55   55Pxx   55Qxx   57Txx
+514.3	 topology of spaces    57-XX   57Nxx   57Pxx   57Qxx
+514.7	 analytic topology    58-XX
+514.72	 differential topology    53C12   57Rxx
+514.74	 global analysis    58-XX
+515	 analysis    26-XX   28-XX   30-XX   31-XX   32-XX   33-XX   34-XX   35-XX   37-XX   39-XX   40-XX   41-XX   42-XX   44-XX   45-XX   46-XX   47-XX   49-XX   58-XX
+515.234	 expansion of functions    41-XX
+515.24	 sequence and series    40-XX   40Axx   40Exx
+515.243	 series    11P81   11P82   11P83   40Cxx   40Dxx   40Gxx   40H05   40J05   65Bxx
+515.2433	 Fourier and harmonic analysis    42-XX   65Txx
+515.35	 differential equations    28A80   30E25   32S25   32Sxx   34Axx   34Bxx   34Dxx   34Exx   34Gxx   34Kxx   35Axx   35Bxx   35Cxx
+515.352	 ordinary differential equations    34-XX   34Cxx   54H20   65Lxx
+515.353	 partial differential equations    35-XX   35Dxx   35Exx   35Fxx   35Gxx   35Hxx   35Jxx   35Kxx   35Lxx   35Mxx   35Rxx   65Mxx   65Nxx   65Pxx
+515.36	 differential inequalities    32Sxx   34A40   35J85   52A10   52A15   52A20
+515.38	 mixed equations    34Kxx   35Rxx   45J05   45K05   65Q05
+515.4	 integral calculus and equations    51M25   52A38
+515.42	 theory of measure and integration    28-XX   28Dxx   28Exx   46Gxx
+515.43	 integral calculus    30E20
+515.45	 integral equations    45-XX   65R10   65Rxx
+515.5	 special functions    33-XX   33Exx   65D20
+515.52	 eulerian integrals    33Bxx
+515.54	 Mathieu functions    33E10
+515.55	 orthogonal polynomials    33Cxx   33Dxx
+515.623	 numerical differentiation    65D25
+515.624	 numerical integration    65D30
+515.625	 difference equations    39-XX   39Axx   65Q05
+515.63	 vector, tensor, spinor analysis    53A45   81R25   83C60
+515.64	 calculus of variations    34H05   49-XX   49Jxx   49Kxx   49Mxx   58Exx   65Kxx
+515.7	 functional analysis    46-XX   49Lxx
+515.72	 operational calculus    44-XX
+515.7222	 spectral theory    35Pxx
+515.723	 transforms (integral operators)    44A05   44A10   44A12   44A15   44A20   44A30   47Cxx   47Gxx   65R20   65Rxx   65T50
+515.724	 operator theory    35Pxx   47-XX   47Nxx   47Sxx   65Jxx
+515.7242	 differential operators    32Fxx   34Lxx   35Sxx   47-XX   47E05   47F05   65J10
+515.7246	 linear operators    47Axx   47Bxx   47Dxx   65J15
+515.7248	 nonlinear operators    47Hxx   58Cxx
+515.73	 topological vector spaces    46Axx   46Exx   52A07   54C35   58D05   58D07   58Dxx   58Exx
+515.732	 Banach spaces    46Bxx   52A21
+515.733	 Hilbert spaces    46Cxx
+515.782	 distribution theory    46Exx   46Fxx
+515.783	 abstract measure theory    28Bxx   28Cxx
+515.785	 abstract harmonic analysis    43-XX
+515.8	 functions of real variables    26-XX   26Exx
+515.825	 equations and functions    26Cxx
+515.826	 inequalities    26Dxx
+515.83	 functions of one real variable    26Axx
+515.84	 functions of several real variables    26Bxx
+515.9	 functions of complex variables    05E35   30-XX   31-XX   31Axx   31Bxx   31Cxx   31D05   32-XX   32Nxx   32Sxx
+515.9223	 uniformity and multiformity    30Fxx   30H05   32Cxx   32Jxx   32Kxx   32Lxx   32Mxx
+515.9232	 determination of functions    65E05
+515.9234	 expansion of functions    30Bxx
+515.9243	 series    32A05
+515.926	 inequalities    30A10   32A22
+515.93	 functions of one complex variable    30-XX
+515.94	 functions of several complex variables    32-XX   32Bxx
+515.98	 specific types of complex variable functions    11Fxx   30Dxx   30F35   30Gxx   32A15   32A17   32Gxx
+515.982	 meromorphic functions    32A20   32H04
+515.983	 elliptic functions    33E05
+515.984	 theta function    33D05
+516	 geometry    51-XX   51Hxx   54F45   55M10
+516.07	 manifolds    51H20   51H25   51H30   51M35   53C15
+516.08	 convex sets    52-XX
+516.1	 general aspects    51Fxx
+516.12	 incidence geometry    51Axx   51Bxx   51H10   51H15   51Jxx
+516.13	 combinatorial and constructive geometry    05B05   05B25   05B30   05B35   05B40   05B45   51D20   51Exx   52B05
+516.15	 geometric configurations, measures, shapes    51M20   52Bxx   54C56   55P55
+516.17	 geometry of inequalities    51M16   52A40
+516.182	 vector geometry    53A45   53Axx
+516.183	 line geometry    51M30
+516.2	 Euclidean geometry    51M04   51M05   51Mxx
+516.3	 analytic geometries    51M05   51Mxx   51N20   51Nxx
+516.34	 analitic trigonometry    33B10
+516.35	 algebraic geometry    11Gxx   14-XX   14Axx   14Bxx   14Cxx   14Dxx   14Exx   14Kxx   14Lxx   14Mxx   30Cxx   51Dxx   51M20   51N25   51N30   51N35   52Bxx   52Cxx
+516.352	 curves and surfaces on projective and affine planes    14Hxx
+516.353	 algebraic varieties of higher dimensions    14Jxx
+516.36	 differential and integral geometry    51H20   51H25   51H30   51Kxx   51Lxx   51M35   53-XX   53Bxx   53Cxx
+516.362	 integral geometry (global differential geometry)    52A22   52A41   52A55   53C65
+516.37	 metric differential geometries    53-XX   53Bxx   53Cxx
+516.372	 Euclidean geometry    53A04   53A05   53A07
+516.373	 Riemannian geometry    53C20   53C21   53C25
+516.375	 Finsler geometry    53C60
+516.4	 affine geometry    14Nxx   51N10
+516.5	 projective geometry    14Nxx   51J10   51M35   51N15
+516.6	 abstract descriptive geometry    14Nxx   51N05   51Nxx
+516.9	 non-Euclidean geometries    51M09   51M10   51Mxx
+519	 probabilities & applied mathematics    90-XX
+519.2	 probabilities    34F05   47S50   52A22   60-XX   60Axx   60C05   60D05   60Hxx   68Q30   68Q45   90-XX
+519.23	 probabilistic processes    60Gxx   62M07   62M09
+519.232	 stationary processes    60G10
+519.233	 Markov processes    60Jxx   62M02   62M05
+519.24	 probability distribution    60Exx   60J80   60J85   62Exx
+519.26	 probabilities over rings, algebras, other algebraic structures    20P05   60Bxx
+519.282	 random walks    60G50   60Jxx   82B41   82C41
+519.287	 expectations and prediction    60G42   60G44   60G46   60K05   60K10   60K15   60K20   62M20   62N05   62Nxx
+519.3	 game theory    91-XX   91Axx
+519.4	 applied numerical analysis    65Cxx   68U20
+519.5	 statistical mathematics    62-XX   62A01   91B19
+519.52	 theory of sampling    62D05
+519.53	 descriptive statistics, multivariate analysis, analysis of variance and covariance    62H30
+519.532	 frequency distribution    62Exx   62G30
+519.535	 multivariate analysis    62Hxx
+519.5354	 factor analysis    62H25
+519.536	 regression analysis    62Jxx
+519.537	 correlation (association) analysis    62H20
+519.538	 analysis of variance and covariance    62J10
+519.54	 statistical inference    62Bxx   62Fxx   62Gxx   62Lxx   62Mxx
+519.542	 decision theory    62Cxx   91B05
+519.544	 estimation theory    62F10   62F12   62Fxx   62G05   62G07   62H12   62M05   62M09
+519.55	 time-series analysis    62M10
+519.56	 hypothesis testing    62F03   62G10   62H15   62M02   62M07
+519.7	 programming    65Kxx   90B80   90B85   90Cxx
+519.72	 linear programming    90C05
+519.76	 nonlinear programming    49M37   52A41   90C20   90C25   90C30
+519.82	 queuing    60K25   60K30   90B22
+519.83	 inventory and storage    90B05
+519.86	 quality control and other statistical adjustements    62Nxx   90B25
+520	 astronomy and allied sciences    85-XX
+530.11	 relativity theory    83-XX
+530.12	 quantum mechanics (quantum theory)    81-XX
+530.13	 statistical mechanics    82-XX
+530.133	 quantum statistics (quantum statistical mechanics)    81-XX   81S25
+531	 classical mechanics; solid mechanics    70-XX   74-XX
+532	 fluid mechanics; liquid mechanics    76-XX
+535.14	 electromagnetic theory    78-XX
+535.15	 quantum theory    81-XX
+535.2	 physical optics    78-XX
+536	 heat    80-XX
+536.2	 heat transfer (transmission)    80-XX
+536.7	 thermodynamics    80-XX
+541.36	 thermochemistry and thermodynamics    80-XX
+551	 geology, hydrology, meteorology    86-XX
+570	 life sciences, biology    92-XX
+629.8312	 control theory    34H05
+658.40301	 philosophy and theory of decision process    90B50   91B05
+658.4032	 system theory and analysis    93-XX
+658.4034	 operating research    90-XX
+908	 with respect to kind of persons    01-XX
+920	 biography, genealogy, insignia    01-XX
+931	 China    01A25
+932	 Egypt    01A16
+934	 India    01A32
+935	 Mesopotamia and iranian plateau    01A17
+937	 Italy and adjacent territories    01A20
+938	 Greece    01A20
+951	 China and adjacent areas    01A25
+952	 Japan    01A27
+955	 Iran    01A30
+956	 Middle East (Near East)    01A30
+958	 Central Asia    01A30
+960	 general history of Africa    01A30
