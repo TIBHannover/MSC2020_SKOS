@@ -6,6 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://msc.org/resources/MSC/msc2020/mscvocab> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <http://msc.org/resources/MSC/msc2020/mscvocab> rdf:type owl:Ontology ;
                                                  owl:imports rdf: , skos: ;
