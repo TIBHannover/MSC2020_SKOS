@@ -92,6 +92,10 @@ Task 5: Create collections
 
 - create instances of skos:Collection and define which are its `skos:member`.
 
+Task 6: Create MSC-specific scope notes
+
+- create instances of `mscvocab:NotUseScopeNote`, `mscvocab:UseScopeNote` and `mscvocab:MustUseScopeNote`
+
 Q1: The tasks have not been performed in that order, which is why some of the OpenRefine operations documented below are not given in a consecutive order (e.g. *Task2: Concept hierarchy* has been done after introducing a filter criterium for *Task 3: Internal references* so that Step 7 will be described after Steps 8-x). Is that confusing?
 
 ## Documentation of modelling steps
@@ -3208,3 +3212,19 @@ In the end, we decided that it would be a good idea to store the text from colum
 ### Task 5: Create collections
 
 See SPARQL queries documented in [msc-2020-suggestion2-incomplete.ttl](https://github.com/runnwerth/MSC2020_SKOS/blob/main/msc-2020-suggestion2-incomplete.ttl).
+
+### Task 6: Create MSC-specific scope notes
+
+Sub-task 1 `mscvocab:NotUseScopeNote`
+
+- identify relevant concepts --> value of `skos:prefLabel` contains the text fragment "do not use"
+- create instances for `mscvocab:NotUseScopeNote` for each identfied  concept
+- create triples between a) the skos:Concept and the newly created instances of `mscvocab:NotUseScopeNote` with `skos:scopeNote`, b) between the newly created instances of `mscvocab:NotUseScopeNote` and the value of `skos:prefLabel` with `mscvocab:scope`
+
+Sub-task 3 `mscvocab:MustUseScopeNote`
+
+- Proceed as before. Filter criterion ist "must".
+
+Sub-task 2 `mscvocab:UseScopeNote`
+
+- Proceed as before. Filter criterion is ". Use".
