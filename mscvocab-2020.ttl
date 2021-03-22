@@ -36,7 +36,7 @@ dc:created a owl:AnnotationProperty .
 
 #Comment on related elements in this property from mscvocab-2010
 <http://msc2010.org/resources/MSC/2010/mscvocab#SeeForLink> 
-                rdfs:comment "Not taken over to mscvocab-2020. For reified links, with introduced classed that are subclasses of rdf:statement, e.g. :seeForStatement."@en ;
+                rdfs:comment "Not taken over to mscvocab-2020. For reified links, with introduced classed that are subclasses of rdf:statement, e.g. :SeeForStatement."@en ;
                 skos:editorialNote "Mark this class as deprecated."@en ;
                 rdfs:isDefinedBy <http://msc2010.org/resources/MSC/2010/mscvocab> .
 
@@ -67,10 +67,18 @@ dc:created a owl:AnnotationProperty .
 ###  http://msc.org/resources/MSC/msc2020/mscvocab#seeFor
 :seeFor rdf:type owl:ObjectProperty ;
         rdfs:label "for <some specific topic>, see" ;
-        rdfs:comment "pointer to a record that describes a ‘see for’ link , i.e. an instance of mscvocab:seeForStatement"@en ;
-        rdfs:range :seeForStatement ;
+        rdfs:comment "pointer to a record that describes a ‘see for’ link , i.e. an instance of mscvocab:SeeForStatement"@en ;
+        rdfs:range :SeeForStatement ;
         rdfs:domain skos:Concept ;
         rdfs:subPropertyOf :relatedPartOf ;
+        rdfs:comment "The rdfs:range defined in mscvocab-2010 of this property has been updated to the new reification structure of MSC 2020 SKOS."@en .
+
+# New seeFor property to link between instances of skos:Concept and mscvocab:seeForStatement with a collection
+###  http://msc.org/resources/MSC/msc2020/mscvocab#seeForToCollection
+:seeForToCollection rdf:type owl:ObjectProperty ;
+        rdfs:label "for <some specific topic>, see" ;
+        rdfs:comment "pointer to a record that describes a ‘see for’ link , i.e. an instance of mscvocab:SeeForStatementWithCollection"@en ;
+        rdfs:range :SeeForStatementWithCollection ;
         rdfs:comment "The rdfs:range defined in mscvocab-2010 of this property has been updated to the new reification structure of MSC 2020 SKOS."@en .
 
 #Expanded after comparison with mscvocab-2010
@@ -91,10 +99,17 @@ dc:created a owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  http://msc.org/resources/MSC/msc2020/mscvocab#seeForStatement
-:seeForStatement rdf:type owl:Class ;
+###  http://msc.org/resources/MSC/msc2020/mscvocab#SeeForStatement
+:SeeForStatement rdf:type owl:Class ;
                  rdfs:subClassOf rdf:Statement ;
-                 rdfs:comment "Type of rdf:Statement that allows the annotation of a triple using mscvocab:seeConditionally/ reification of a triple using mscvocab:seeConcitionally. A :seeForStatement declares an rdf:subject, an rdf:predicate and an rdf:object and an mscvocab:scope that defines the condition of the reified triple using mscvocab:seeConditionally.";
+                 rdfs:comment "Type of rdf:Statement that allows the annotation of a triple using mscvocab:seeConditionally/ reification of a triple using mscvocab:seeConcitionally. A :SeeForStatement declares an rdf:subject, an rdf:predicate and an rdf:object and an mscvocab:scope that defines the condition of the reified triple using mscvocab:seeConditionally.";
+                 skos:editorialNote "Newly introduced in mscvoca-2020, successor of <http://msc2010.org/resources/MSC/2010/mscvocab#SeeForLink>";
+                 skos:editorialNote "Class IRI needs to be updated to follow CamelCase for classes. Update in MSC 2020 SKOS needed as well".
+
+# New class for rdf:Statements with a Collection				 
+:SeeForStatementWithCollection a owl:Class ;
+                 rdfs:subClassOf rdf:Statement ;
+                 rdfs:comment "Type of rdf:Statement that allows the annotation of a triple using mscvocab:seeConditionallyElementofCollection/ reification of a triple using mscvocab:seeConditionallyElementofCollection. A :SeeForStatement declares an rdf:subject, an rdf:predicate and an rdf:object and an mscvocab:scope that defines the condition of the reified triple using mscvocab:seeConditionally.";
                  skos:editorialNote "Newly introduced in mscvoca-2020, successor of <http://msc2010.org/resources/MSC/2010/mscvocab#SeeForLink>";
                  skos:editorialNote "Class IRI needs to be updated to follow CamelCase for classes. Update in MSC 2020 SKOS needed as well".
 
@@ -159,5 +174,25 @@ dc:created a owl:AnnotationProperty .
 # New property to link an instance of skos:Concept to a skos:Collection
 mscvocab:seeConditionallyElementofCollection a owl:ObjectProperty ;
   rdfs:label "Property used to link an MSC concept to a collection of other MSC concepts when a certain condition is met";
-  rdfs:domain skos:Collection .
+  rdfs:range skos:Collection .
+
+
+# New properties than can be used to express a reference from an MSC concept to an MSC collection without causing inconsistencies
+###  http://msc.org/resources/MSC/msc2020/0000000007
+<http://msc.org/resources/MSC/msc2020/0000000007> rdf:type owl:ObjectProperty ;
+                                                  rdfs:range skos:Collection ;
+                                                  rdfs:label "seeElementOfCollection"@en .
+
+
+###  http://msc.org/resources/MSC/msc2020/0000000008
+<http://msc.org/resources/MSC/msc2020/0000000008> rdf:type owl:ObjectProperty ;
+                                                  rdfs:subPropertyOf <http://msc.org/resources/MSC/msc2020/0000000007> ;
+                                                  rdfs:label "see also elements of a collection"@en ,
+                                                             "seeAlsoElementOfCollection"@en .
+
+###  http://msc.org/resources/MSC/msc2020/mscvocab#seeConditionallyElementofCollection
+mscvocab:seeConditionallyElementofCollection rdfs:subPropertyOf <http://msc.org/resources/MSC/msc2020/0000000007> .
+
+
+ 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
