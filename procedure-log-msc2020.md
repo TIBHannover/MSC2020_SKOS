@@ -3235,7 +3235,7 @@ In the end, we decided that it would be a good idea to store the text from colum
 
 ### Task 5: Create collections
 
-See SPARQL queries documented in [msc-2020-suggestion2-incomplete.ttl](https://github.com/runnwerth/MSC2020_SKOS/blob/main/msc-2020-suggestion2-incomplete.ttl).
+We created the identifiers for the collections manually. The entities representing the collections are related to their members via `skos:member`. These relations can be created via a `SPARQL CONSTRUCT` query and specific filter criteria. These queries are documented in [msc-2020-suggestion2-incomplete.ttl](https://github.com/runnwerth/MSC2020_SKOS/blob/main/msc-2020-suggestion2-incomplete.ttl).
 
 ### Task 6: Create MSC-specific scope notes
 
