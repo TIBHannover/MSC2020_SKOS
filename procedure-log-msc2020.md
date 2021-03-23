@@ -19,7 +19,7 @@ Legacy modelling decisions for the MSC 2010 SKOS version are described in the fo
 
 These were followed wherever possible.
 
-## Input for the SKOS version of MSC 2020 
+## Input for the SKOS version of MSC 2020
 
 The input for creating the SKOS was an export from the [x] database provided by [x] as a .xslx-file with the following structure:
 
@@ -82,7 +82,8 @@ Task 2: Concept hierarchy
 
 Task 3: Internal references
 
-- create internal references between MSC skos:Concepts (mscvocab:seeMainly, mscvoab:seeAlso, mscvocab:seeFor)
+- create internal references between MSC skos:Concepts (mscvocab:seeMainly, mscvoab:seeAlso, mscvocab:seeConditionally)
+- create instances of rdf:Statement to describe the condition that holds for an `mscvocab:seeConditionally` relation between two MSC concepts
 
 Task 4: Historical references [still open, see <https://github.com/runnwerth/MSC2020_SKOS/issues/6>]
 
@@ -295,7 +296,7 @@ We wanted to give the hierarchical relation by skos:broader, leaving skos:narrow
 
 #### **Step 8: Create a column for each concept's superordinate's identifier**
 
-Due to the MSC's great notation, this is a matter of some replacements and concatenations: 
+Due to the MSC's great notation, this is a matter of some replacements and concatenations:
 
 ```json
 [
@@ -366,13 +367,14 @@ Due to the MSC's great notation, this is a matter of some replacements and conca
 ### Task 3: Internal References
 
 Internal references between MSC concepts are described in column `description` of our input file. There are three types of internal references between MSC concepts which are captured by mscvocabs three object properties:
+
 - mscvocab:seeAlso
 - mscvocab:seeMainly
-- msc:seeConditionally
+- mscvocab:seeConditionally
 
-Next to these kinds of reference, the text in the column ´description´ shows other types of information, e.g. it repeats the content from column `text` or other natural language text. Textual information in this column is often very homogeneous and standardised to a certain degree and can therefore easily be transformed to triples working with mscvocabs object properties. However, there are also some irregularities e.g. there seems to be no standardized order of information types in the column, and on some occasions, there are some deviations from the regular notation in this column.
+Next to these kinds of reference, the text in the column ´description´ shows other types of information, e.g. it repeats the content from column `text` or other natural language text describing a condition under which a reference between two concepts holds. Textual information in this column is often very homogeneous and standardised to a certain degree and can therefore easily be transformed to triples working with mscvocabs object properties. However, there are also some irregularities e.g. there seems to be no standardised order of information types in the column, and on some occasions, there are some deviations from the regular notation in this column.
 
-To be able to create relations between MSC concepts which are `owl:NamedIndividuals` resp. instances of skos:Concept, we needed to extract the notations of these related concepts from the column to perform further steps like identifier creation and triple creation as done before in *Task 1: Basic triples*. Due to the different types of information, the non-standardized order of their occurrence and the irregularities, this required a huge number of steps. The basic aim of these steps was to split the whole set of relevant cells of the column `description` up into columns where all cells contain the same type of information and to split up multi-valued cells with only one value per cell. The values in these new columns can then be used as objects of triples and are either URIs or literals.
+To be able to create relations between MSC concepts which are `owl:NamedIndividuals` resp. instances of skos:Concept, we needed to extract the notations of these related concepts from the column to perform further steps like identifier creation and triple creation as done before in *Task 1: Basic triples*. Due to the different types of information, the non-standardised order of their occurrence and the irregularities, this required a huge number of steps. The basic aim of these steps was to split the whole set of relevant cells of the column `description` up into columns where all cells contain the same type of information and to split up multi-valued cells with only one value per cell. The values in these new columns can then be used as objects of triples and are either URIs or literals.
 
 Here is an example of a relevant cell with multiple types of information:
 
@@ -381,6 +383,27 @@ Here is an example of a relevant cell with multiple types of information:
 |03B45| Modal logic (including the logic of norms) | Modal logic (including the logic of norms) \{For knowledge and belief, see 03B42; for temporal logic, see 03B44; for provability logic, see also 03F45\}|
 
 To adress the "multi-valuedness" and irregularities in this column, we tried to split the cells up according to their shared regularies (using text factes, selection, inversion and text filters) until there was only an irregular rest left. We will not describe all the factes and filters in detail, here, but they and all operations done on column `description` and resulting new columns are documented below in *Step 10: Taiming the `description` column*.
+
+In the given example, from the column `description` we took the information that `03B45` links to the concepts `03B42`, `03B44`, `03F45` and that there is a condition applying to these relations, which is given as natural language text, e.g. `For knowledge and belief`. For the relation between the concepts, we use a self-defined property `mscvocab:seeConditionally`, e.g.:
+
+`<http://msc.org/resources/MSC/msc2020/03B45> mscvocab:seeConditionally <http://msc.org/resources/MSC/msc2020/03B42>`
+
+While this is straightforward, providing the condition requires an additional structural solution, e.g. an annotation on a relation or referring to the relation by its own identifier and making statements about this resource (reification). We decided to follow the solution of MSC 2010 as much as possible and used reification. The entity representing the statement to be commented on, is typed as an instance of `mscvocab:SeeForStatement`, a subclass of rdf:Statement newly introduced to mscvocab 2020. Different from MSC 2010, we described a statement's `rdf:subject`, `rdf:predicate`, and `rdf:object` (instead of `mscvocab:forTarget` as used by MSC 2010). We provided the condition for the `mscovab:seeConditionally` relation between two concepts via `mscvocab:scope` just like MSC 2010:
+
+```turtle
+msc:SeeForStatement-03B45-to-03B42 rdf:type owl:NamedIndividual ,
+                                            mscvocab:SeeForStatement ;
+                                   rdf:object <http://msc.org/resources/MSC/msc2020/03B42> ;
+                                   rdf:predicate mscvocab:seeConditionally ;
+                                   rdf:subject <http://msc.org/resources/MSC/msc2020/03B45> ;
+                                   mscvocab:scope "For knowledge and belief"^^rdf:XMLLiteral .
+```
+
+Q2: Where should we introduce mscvocab? Should we comment on the fact, that we started without it? I think I did not very much refer to it before... And the OpenRefine code snippets are all using properties like `msc:seeAlso` because we defined them within the file/namespace of the MSC data - which is very confusing.
+
+Just like in MSC 2010, we also wanted to make the relation between a concept and a statement it is the `rdf:subject` of, explicit by `mscvocab:seeFor`:
+
+`<http://msc.org/resources/MSC/msc2020/03B45> mscvocab:seeFor msc:SeeForStatement-03B45-to-03B42 .`
 
 #### **Step 7: Set a filter criterion for working on Task 3**
 
@@ -408,7 +431,8 @@ In this preparatory step we filter out all cells that do not have any internal r
     "description": "Move column comparison text/description to position 9"
   }
 ]
-```
+
+
 #### **Step 10: Taiming the `description` column**
 
 Step 10 incluedes a great number of very fine-grained operations, sometimes even edits on single cells. The following code will not be re-usable in future MSC SKOS conversions and is limited to the data at hand.
@@ -3159,7 +3183,7 @@ The SPARQL queries are documented in the Turtle file as an `rdfs:comment` on `ms
 
 #### **Step 11: Take text from column `description` over to the SKOS version as a scopeNote**
 
-In the end, we decided that it would be a good idea to store the text from column `description` as a skos:scopeNote - just to make sure. 
+In the end, we decided that it would be a good idea to store the text from column `description` as a skos:scopeNote - just to make sure.
 
 ```json
 [
