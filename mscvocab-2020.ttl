@@ -1,15 +1,15 @@
-@prefix : <http://msc.org/resources/MSC/msc2020/mscvocab#> .
+@prefix : <https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://msc.org/resources/MSC/msc2020/mscvocab> .
+@base <https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix mscvocab: <http://msc.org/resources/MSC/msc2020/mscvocab#> .
+@prefix mscvocab: <https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#> .
 
-<http://msc.org/resources/MSC/msc2020/mscvocab> rdf:type owl:Ontology ;
+<https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab> rdf:type owl:Ontology ;
                                                  owl:imports rdf: , skos: ;
                                                  rdfs:comment "This is an MSC-specific extension of SKOS created during the conversion of MSC 2020 to a SKOS vocabulary. It is based on <http://msc2010.org/resources/MSC/2010/mscvocab> created by Patrick Ion and Christoph Lange during their creation of a SKOS version of MSC 2010.";
                                                  dc:created "2021-03-15"^^xsd:date .
@@ -25,7 +25,7 @@ dc:created a owl:AnnotationProperty .
 #################################################################
 
 #Expanded after comparison with mscvocab-2010
-###  http://msc.org/resources/MSC/msc2020/mscvocab#forTarget
+###  https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#forTarget
 :forTarget rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf rdf:object ;
            rdfs:label "target" ;
@@ -41,19 +41,19 @@ dc:created a owl:AnnotationProperty .
                 rdfs:isDefinedBy <http://msc2010.org/resources/MSC/2010/mscvocab> .
 
 # Expanded after comparison with mscvocab-2010
-###  http://msc.org/resources/MSC/msc2020/mscvocab#relatedPartOf
+###  https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#relatedPartOf
 :relatedPartOf rdf:type owl:ObjectProperty ;
         rdfs:label "partitively related" ;
         rdfs:subPropertyOf skos:semanticRelation .
 
 # Expanded after comparison with mscvocab-2010
-###  http://msc.org/resources/MSC/msc2020/mscvocab#seeAlso
+###  https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#seeAlso
 :seeAlso rdf:type owl:ObjectProperty ;
         rdfs:label "see also" ;
          rdfs:subPropertyOf :relatedPartOf .
 
 # Expanded after comparison with mscvocab-2010
-###  http://msc.org/resources/MSC/msc2020/mscvocab#seeConditionally
+###  https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#seeConditionally
 :seeConditionally rdf:type owl:ObjectProperty ;
                   rdfs:label "see conditionally" ;
                   rdfs:subPropertyOf :relatedPartOf ;
@@ -64,7 +64,7 @@ dc:created a owl:AnnotationProperty .
  rdfs:comment "The owl:propertyChainAxiom defined in mscvocab-2010 has been updated to the new reification structure of MSC 2020 SKOS."@en .
 
 #Expanded after comparison with mscvocab-2010
-###  http://msc.org/resources/MSC/msc2020/mscvocab#seeFor
+###  https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#seeFor
 :seeFor rdf:type owl:ObjectProperty ;
         rdfs:label "for <some specific topic>, see" ;
         rdfs:comment "pointer to a record that describes a ‘see for’ link , i.e. an instance of mscvocab:SeeForStatement"@en ;
@@ -74,7 +74,7 @@ dc:created a owl:AnnotationProperty .
         rdfs:comment "The rdfs:range defined in mscvocab-2010 of this property has been updated to the new reification structure of MSC 2020 SKOS."@en .
 
 # New seeFor property to link between instances of skos:Concept and mscvocab:seeForStatement with a collection
-###  http://msc.org/resources/MSC/msc2020/mscvocab#seeForToCollection
+###  https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#seeForToCollection
 :seeForToCollection rdf:type owl:ObjectProperty ;
         rdfs:label "for <some specific topic>, see" ;
         rdfs:comment "pointer to a record that describes a ‘see for’ link , i.e. an instance of mscvocab:SeeForStatementWithCollection"@en ;
@@ -82,7 +82,7 @@ dc:created a owl:AnnotationProperty .
         rdfs:comment "The rdfs:range defined in mscvocab-2010 of this property has been updated to the new reification structure of MSC 2020 SKOS."@en .
 
 #Expanded after comparison with mscvocab-2010
-###  http://msc.org/resources/MSC/msc2020/mscvocab#seeMainly
+###  https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#seeMainly
 :seeMainly rdf:type owl:ObjectProperty ;
            rdfs:label "see mainly" ;
            rdfs:subPropertyOf :relatedPartOf .
@@ -92,14 +92,14 @@ dc:created a owl:AnnotationProperty .
   a owl:ObjectProperty ;
   rdfs:label "source" ;
   rdfs:comment "source of a ‘see for’ link" ;
-  owl:inverseOf <http://msc.org/resources/MSC/msc2020/mscvocab#seeFor> ;
+  owl:inverseOf <https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#seeFor> ;
   rdfs:range skos:Concept .
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://msc.org/resources/MSC/msc2020/mscvocab#SeeForStatement
+###  https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#SeeForStatement
 :SeeForStatement rdf:type owl:Class ;
                  rdfs:subClassOf rdf:Statement ;
                  rdfs:comment "Type of rdf:Statement that allows the annotation of a triple using mscvocab:seeConditionally/ reification of a triple using mscvocab:seeConcitionally. A :SeeForStatement declares an rdf:subject, an rdf:predicate and an rdf:object and an mscvocab:scope that defines the condition of the reified triple using mscvocab:seeConditionally.";
