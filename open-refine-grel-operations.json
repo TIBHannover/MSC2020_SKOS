@@ -8,11 +8,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "code",
-    "expression": "grel:\"<http://msc.org/resources/MSC/msc2020/\"+value+\">\"",
+    "expression": "grel:\"<https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\">\"",
     "onError": "store-error",
     "newColumnName": "Concept Identifier",
     "columnInsertIndex": 2,
-    "description": "Create column Concept Identifier at index 2 based on column code using expression grel:\"<http://msc.org/resources/MSC/msc2020/\"+value+\">\""
+    "description": "Create column Concept Identifier at index 2 based on column code using expression grel:\"<https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\">\""
   },
   {
     "op": "core/column-move",
@@ -71,11 +71,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "Concept Identifier",
-    "expression": "grel:value+\" skos:inScheme <http://msc.org/resources/MSC/msc2020/> .\"",
+    "expression": "grel:value+\" skos:inScheme <https://msc2020.org/resources/MSC/2020/MSC2020/> .\"",
     "onError": "store-error",
     "newColumnName": "skos:in Scheme triple",
     "columnInsertIndex": 5,
-    "description": "Create column skos:in Scheme triple at index 5 based on column Concept Identifier using expression grel:value+\" skos:inScheme <http://msc.org/resources/MSC/msc2020/> .\""
+    "description": "Create column skos:in Scheme triple at index 5 based on column Concept Identifier using expression grel:value+\" skos:inScheme <https://msc2020.org/resources/MSC/2020/MSC2020/> .\""
   },
   {
     "op": "core/column-move",
@@ -964,11 +964,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "see also reference",
-    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso \"+\"<http://msc.org/resources/MSC/msc2020/\"+value+\"> .\"",
+    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso \"+\"<https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\"",
     "onError": "store-error",
     "newColumnName": "msc:seeAlso ?y",
     "columnInsertIndex": 19,
-    "description": "Create column msc:seeAlso ?y at index 19 based on column see also reference using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso \"+\"<http://msc.org/resources/MSC/msc2020/\"+value+\"> .\""
+    "description": "Create column msc:seeAlso ?y at index 19 based on column see also reference using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso \"+\"<https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\""
   },
   {
     "op": "core/text-transform",
@@ -1222,11 +1222,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "see also reference",
-    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso <http://msc.org/resources/MSC/msc2020/\"+value+\"> .\"",
+    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso <https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\"",
     "onError": "store-error",
     "newColumnName": "msc:seeAlso ?y 2",
     "columnInsertIndex": 19,
-    "description": "Create column msc:seeAlso ?y 2 at index 19 based on column see also reference using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso <http://msc.org/resources/MSC/msc2020/\"+value+\"> .\""
+    "description": "Create column msc:seeAlso ?y 2 at index 19 based on column see also reference using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso <https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\""
   },
   {
     "op": "core/column-move",
@@ -1663,11 +1663,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "description - extract 4 [See mainly 2",
-    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeMainly <http://msc.org/resources/MSC/msc2020/\"+value+\"> .\"",
+    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeMainly <https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\"",
     "onError": "store-error",
     "newColumnName": "msc:seeMainly",
     "columnInsertIndex": 27,
-    "description": "Create column msc:seeMainly at index 27 based on column description - extract 4 [See mainly 2 using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeMainly <http://msc.org/resources/MSC/msc2020/\"+value+\"> .\""
+    "description": "Create column msc:seeMainly at index 27 based on column description - extract 4 [See mainly 2 using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeMainly <https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\""
   },
   {
     "op": "core/column-addition",
@@ -2733,11 +2733,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "msc:ForTarget",
-    "expression": "grel:\"<http://msc.org/resources/MSC/msc2020/seeForStatement-\"+cells[\"code\"].value+\"-to-\"+value+\">\"",
+    "expression": "grel:\"<https://msc2020.org/resources/MSC/2020/MSC2020/seeForStatement-\"+cells[\"code\"].value+\"-to-\"+value+\">\"",
     "onError": "store-error",
     "newColumnName": "For-x-see-y statement identifier",
     "columnInsertIndex": 28,
-    "description": "Create column For-x-see-y statement identifier at index 28 based on column msc:ForTarget using expression grel:\"<http://msc.org/resources/MSC/msc2020/seeForStatement-\"+cells[\"code\"].value+\"-to-\"+value+\">\""
+    "description": "Create column For-x-see-y statement identifier at index 28 based on column msc:ForTarget using expression grel:\"<https://msc2020.org/resources/MSC/2020/MSC2020/seeForStatement-\"+cells[\"code\"].value+\"-to-\"+value+\">\""
   },
   {
     "op": "core/fill-down",
@@ -2866,11 +2866,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "For-x-see-y statement identifier",
-    "expression": "grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <http://msc.org/resources/MSC/msc2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\"",
+    "expression": "grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\"",
     "onError": "store-error",
     "newColumnName": "For-x-see-y statements",
     "columnInsertIndex": 29,
-    "description": "Create column For-x-see-y statements at index 29 based on column For-x-see-y statement identifier using expression grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <http://msc.org/resources/MSC/msc2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\""
+    "description": "Create column For-x-see-y statements at index 29 based on column For-x-see-y statement identifier using expression grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\""
   },
   {
     "op": "core/column-addition",

@@ -108,21 +108,21 @@ In the following we will describe the basic modelling tasks that have been perfo
 The triples we generate with OpenRefine operations can - after export from OpenRefine - be copypasted into this file. OpenRefine export option: Do not quote text.
 
 ```Turtle
-@prefix : <http://msc.org/resources/MSC/msc2020/> .
-@prefix msc: <http://msc.org/resources/MSC/msc2020/> .
+@prefix : <https://msc2020.org/resources/MSC/2020/MSC2020/> .
+@prefix msc: <https://msc2020.org/resources/MSC/2020/MSC2020/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix mscvocab: <http://msc.org/resources/MSC/msc2020/mscvocab#> .
-@base <http://msc.org/resources/MSC/msc2020/> .
+@prefix mscvocab: <https://msc2020.org/resources/MSC/2020/MSC2020/mscvocab#> .
+@base <https://msc2020.org/resources/MSC/2020/MSC2020/> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-<http://msc.org/resources/MSC/msc2020/> 
+<https://msc2020.org/resources/MSC/2020/MSC2020/> 
               rdf:type owl:Ontology , skos:ConceptScheme;
               owl:imports mscvocab: ,
                           rdf: ,
@@ -160,11 +160,11 @@ The identifiers for each class will be added by adding a new column to the table
       "mode": "row-based"
     },
     "baseColumnName": "code",
-    "expression": "grel:\"<http://msc.org/resources/MSC/msc2020/\"+value+\">\"",
+    "expression": "grel:\"<https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\">\"",
     "onError": "store-error",
     "newColumnName": "Concept Identifier",
     "columnInsertIndex": 2,
-    "description": "Create column Concept Identifier at index 2 based on column code using expression grel:\"<http://msc.org/resources/MSC/msc2020/\"+value+\">\""
+    "description": "Create column Concept Identifier at index 2 based on column code using expression grel:\"<https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\">\""
   }
 ]
 ```
@@ -249,11 +249,11 @@ MSC entries are typed as skos:Concept.
       "mode": "row-based"
     },
     "baseColumnName": "Concept Identifier",
-    "expression": "grel:value+\" skos:inScheme <http://msc.org/resources/MSC/msc2020/> .\"",
+    "expression": "grel:value+\" skos:inScheme <https://msc2020.org/resources/MSC/2020/MSC2020/> .\"",
     "onError": "store-error",
     "newColumnName": "skos:in Scheme triple",
     "columnInsertIndex": 5,
-    "description": "Create column skos:in Scheme triple at index 5 based on column Concept Identifier using expression grel:value+\" skos:inScheme <http://msc.org/resources/MSC/msc2020/> .\""
+    "description": "Create column skos:in Scheme triple at index 5 based on column Concept Identifier using expression grel:value+\" skos:inScheme <https://msc2020.org/resources/MSC/2020/MSC2020/> .\""
   },
   {
     "op": "core/column-move",
@@ -386,16 +386,16 @@ To adress the "multi-valuedness" and irregularities in this column, we tried to 
 
 In the given example, from the column `description` we took the information that `03B45` links to the concepts `03B42`, `03B44`, `03F45` and that there is a condition applying to these relations, which is given as natural language text, e.g. `For knowledge and belief`. For the relation between the concepts, we use a self-defined property `mscvocab:seeConditionally`, e.g.:
 
-`<http://msc.org/resources/MSC/msc2020/03B45> mscvocab:seeConditionally <http://msc.org/resources/MSC/msc2020/03B42>`
+`<https://msc2020.org/resources/MSC/2020/MSC2020/03B45> mscvocab:seeConditionally <https://msc2020.org/resources/MSC/2020/MSC2020/03B42>`
 
 While this is straightforward, providing the condition requires an additional structural solution, e.g. an annotation on a relation or referring to the relation by its own identifier and making statements about this resource (reification). We decided to follow the solution of MSC 2010 as much as possible and used reification. The entity representing the statement to be commented on, is typed as an instance of `mscvocab:SeeForStatement`, a subclass of rdf:Statement newly introduced to mscvocab 2020. Different from MSC 2010, we described a statement's `rdf:subject`, `rdf:predicate`, and `rdf:object` (instead of `mscvocab:forTarget` as used by MSC 2010). We provided the condition for the `mscovab:seeConditionally` relation between two concepts via `mscvocab:scope` just like MSC 2010:
 
 ```turtle
 msc:SeeForStatement-03B45-to-03B42 rdf:type owl:NamedIndividual ,
                                             mscvocab:SeeForStatement ;
-                                   rdf:object <http://msc.org/resources/MSC/msc2020/03B42> ;
+                                   rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/03B42> ;
                                    rdf:predicate mscvocab:seeConditionally ;
-                                   rdf:subject <http://msc.org/resources/MSC/msc2020/03B45> ;
+                                   rdf:subject <https://msc2020.org/resources/MSC/2020/MSC2020/03B45> ;
                                    mscvocab:scope "For knowledge and belief"^^rdf:XMLLiteral .
 ```
 
@@ -403,7 +403,7 @@ Q2: Where should we introduce mscvocab? Should we comment on the fact, that we s
 
 Just like in MSC 2010, we also wanted to make the relation between a concept and a statement it is the `rdf:subject` of, explicit by `mscvocab:seeFor`:
 
-`<http://msc.org/resources/MSC/msc2020/03B45> mscvocab:seeFor msc:SeeForStatement-03B45-to-03B42 .`
+`<https://msc2020.org/resources/MSC/2020/MSC2020/03B45> mscvocab:seeFor msc:SeeForStatement-03B45-to-03B42 .`
 
 #### **Step 7: Set a filter criterion for working on Task 3**
 
@@ -1218,11 +1218,11 @@ Step 10 incluedes a great number of very fine-grained operations, sometimes even
       "mode": "row-based"
     },
     "baseColumnName": "see also reference",
-    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso \"+\"<http://msc.org/resources/MSC/msc2020/\"+value+\"> .\"",
+    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso \"+\"<https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\"",
     "onError": "store-error",
     "newColumnName": "msc:seeAlso ?y",
     "columnInsertIndex": 19,
-    "description": "Create column msc:seeAlso ?y at index 19 based on column see also reference using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso \"+\"<http://msc.org/resources/MSC/msc2020/\"+value+\"> .\""
+    "description": "Create column msc:seeAlso ?y at index 19 based on column see also reference using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso \"+\"<https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\""
   },
   {
     "op": "core/text-transform",
@@ -1476,11 +1476,11 @@ Step 10 incluedes a great number of very fine-grained operations, sometimes even
       "mode": "row-based"
     },
     "baseColumnName": "see also reference",
-    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso <http://msc.org/resources/MSC/msc2020/\"+value+\"> .\"",
+    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso <https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\"",
     "onError": "store-error",
     "newColumnName": "msc:seeAlso ?y 2",
     "columnInsertIndex": 19,
-    "description": "Create column msc:seeAlso ?y 2 at index 19 based on column see also reference using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso <http://msc.org/resources/MSC/msc2020/\"+value+\"> .\""
+    "description": "Create column msc:seeAlso ?y 2 at index 19 based on column see also reference using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeAlso <https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\""
   },
   {
     "op": "core/column-move",
@@ -1917,11 +1917,11 @@ Step 10 incluedes a great number of very fine-grained operations, sometimes even
       "mode": "row-based"
     },
     "baseColumnName": "description - extract 4 [See mainly 2",
-    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeMainly <http://msc.org/resources/MSC/msc2020/\"+value+\"> .\"",
+    "expression": "grel:cells[\"Concept Identifier\"].value+\" msc:seeMainly <https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\"",
     "onError": "store-error",
     "newColumnName": "msc:seeMainly",
     "columnInsertIndex": 27,
-    "description": "Create column msc:seeMainly at index 27 based on column description - extract 4 [See mainly 2 using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeMainly <http://msc.org/resources/MSC/msc2020/\"+value+\"> .\""
+    "description": "Create column msc:seeMainly at index 27 based on column description - extract 4 [See mainly 2 using expression grel:cells[\"Concept Identifier\"].value+\" msc:seeMainly <https://msc2020.org/resources/MSC/2020/MSC2020/\"+value+\"> .\""
   },
   {
     "op": "core/column-addition",
@@ -2987,11 +2987,11 @@ Step 10 incluedes a great number of very fine-grained operations, sometimes even
       "mode": "row-based"
     },
     "baseColumnName": "msc:ForTarget",
-    "expression": "grel:\"<http://msc.org/resources/MSC/msc2020/seeForStatement-\"+cells[\"code\"].value+\"-to-\"+value+\">\"",
+    "expression": "grel:\"<https://msc2020.org/resources/MSC/2020/MSC2020/seeForStatement-\"+cells[\"code\"].value+\"-to-\"+value+\">\"",
     "onError": "store-error",
     "newColumnName": "For-x-see-y statement identifier",
     "columnInsertIndex": 28,
-    "description": "Create column For-x-see-y statement identifier at index 28 based on column msc:ForTarget using expression grel:\"<http://msc.org/resources/MSC/msc2020/seeForStatement-\"+cells[\"code\"].value+\"-to-\"+value+\">\""
+    "description": "Create column For-x-see-y statement identifier at index 28 based on column msc:ForTarget using expression grel:\"<https://msc2020.org/resources/MSC/2020/MSC2020/seeForStatement-\"+cells[\"code\"].value+\"-to-\"+value+\">\""
   },
   {
     "op": "core/fill-down",
@@ -3120,11 +3120,11 @@ Step 10 incluedes a great number of very fine-grained operations, sometimes even
       "mode": "row-based"
     },
     "baseColumnName": "For-x-see-y statement identifier",
-    "expression": "grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <http://msc.org/resources/MSC/msc2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\"",
+    "expression": "grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\"",
     "onError": "store-error",
     "newColumnName": "For-x-see-y statements",
     "columnInsertIndex": 29,
-    "description": "Create column For-x-see-y statements at index 29 based on column For-x-see-y statement identifier using expression grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <http://msc.org/resources/MSC/msc2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\""
+    "description": "Create column For-x-see-y statements at index 29 based on column For-x-see-y statement identifier using expression grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\""
   },
   {
     "op": "core/column-addition",
