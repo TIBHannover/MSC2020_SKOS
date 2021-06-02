@@ -1,226 +1,226 @@
-<https://msc2020.org/resources/MSC/2020/MSC2020/00-XX> skos:prefLabel "Общий"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/01-XX> skos:prefLabel "История и биографии"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03-XX> skos:prefLabel "Математическая логика и основания математики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/05-XX> skos:prefLabel "Комбинаторика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/06-XX> skos:prefLabel "Порядок, решетки, упорядоченные алгебраические структуры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/08-XX> skos:prefLabel "Общие алгебраические системы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/11-XX> skos:prefLabel "Теория чисел"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/12-XX> skos:prefLabel "Теория полей и многочленов"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/13-XX> skos:prefLabel "Коммутативные кольца и алгебры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/14-XX> skos:prefLabel "Алгебраическая геометрия"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/15-XX> skos:prefLabel "Линейная и полилинейная алгебра; теория матриц"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/16-XX> skos:prefLabel "Ассоциативные кольца и алгебры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/17-XX> skos:prefLabel "Неассоциативные кольца и алгебры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/18-XX> skos:prefLabel "Теория категорий; гомологическая алгебра"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/19-XX> skos:prefLabel "$K$-теория"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/20-XX> skos:prefLabel "Теория групп и ее обобщения"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/22-XX> skos:prefLabel "Топологические группы, группы Ли"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/26-XX> skos:prefLabel "Теория функций действительного переменного"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/28-XX> skos:prefLabel "Мера и интегрирование"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/30-XX> skos:prefLabel "Теория функций комплексного переменного"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/31-XX> skos:prefLabel "Теория потенциала"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/32-XX> skos:prefLabel "Пространства многих комплексных переменных и аналитические пространства"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/33-XX> skos:prefLabel "Специальные функции"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/34-XX> skos:prefLabel "Обыкновенные дифференциальные уравнения"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/35-XX> skos:prefLabel "Дифференциальные уравнения с частными производными"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/37-XX> skos:prefLabel "Динамические системы и эргодическая теория"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/39-XX> skos:prefLabel "Разностные и функциональные уравнения"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/40-XX> skos:prefLabel "Последовательности, ряды, суммируемость"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/41-XX> skos:prefLabel "Аппроксимация и разложение в ряды"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/42-XX> skos:prefLabel "Гармонический анализ"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/43-XX> skos:prefLabel "Абстрактный гармонический анализ"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/44-XX> skos:prefLabel "Интегральные преобразования, операционное исчисление"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/45-XX> skos:prefLabel "Интегральные уравнения"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/46-XX> skos:prefLabel "Функциональный анализ"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/47-XX> skos:prefLabel "Теория операторов"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/49-XX> skos:prefLabel "Вариационное исчисление и оптимальное управление; оптимизация"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/51-XX> skos:prefLabel "Геометрия"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/52-XX> skos:prefLabel "Выпуклая и дискретная геометрия"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/53-XX> skos:prefLabel "Дифференциальная геометрия"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/54-XX> skos:prefLabel "Общая топология"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/55-XX> skos:prefLabel "Алгебраическая топология"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/57-XX> skos:prefLabel "Многообразия и клеточные комплексы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/58-XX> skos:prefLabel "Глобальный анализ, анализ на многообразиях"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/60-XX> skos:prefLabel "Теория вероятностей и случайные процессы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/62-XX> skos:prefLabel "Математическая статистика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/65-XX> skos:prefLabel "Численный анализ"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/68-XX> skos:prefLabel "Computer science"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/70-XX> skos:prefLabel "Механика материальных точек и систем"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/74-XX> skos:prefLabel "Механика деформируемого твердого тела"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/76-XX> skos:prefLabel "Механика жидкости"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/78-XX> skos:prefLabel "Оптика, теория электромагнетизма"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/80-XX> skos:prefLabel "Классическая термодинамика, теплоперенос"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/81-XX> skos:prefLabel "Квантовая теория"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/82-XX> skos:prefLabel "Статистическая механика, строение вещества"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/83-XX> skos:prefLabel "Теория относительности и гравитации"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/85-XX> skos:prefLabel "Астрономия и астрофизика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/86-XX> skos:prefLabel "Геофизика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/90-XX> skos:prefLabel "Исследование операций, математическое программирование"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/91-XX> skos:prefLabel "Теория игр, экономика, общественные и психологические науки"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/92-XX> skos:prefLabel "Биология и другие естественные науки"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/93-XX> skos:prefLabel "Теория систем; управление"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/94-XX> skos:prefLabel "Теория информации и коммуникации, схемы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/97-XX> skos:prefLabel "Математическое образование"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00-01> skos:prefLabel "Учебные материалы (учебные пособия, руководства и пр.)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00-02> skos:prefLabel "Обзоры исследований (монографии, обзорные статьи)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00Axx> skos:prefLabel "Общие и те или иные конкретные темы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A05> skos:prefLabel "Общая математика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A06> skos:prefLabel "Математика для нематематиков (технические науки, общественные науки и т.д.)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A07> skos:prefLabel "Сборники задач"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A08> skos:prefLabel "Занимательная математика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A15> skos:prefLabel "Библиографии"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A17> skos:prefLabel "Обзоры книг"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A20> skos:prefLabel "Словари и другая справочная литература общего характера"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A22> skos:prefLabel "Формуляры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A30> skos:prefLabel "Философия математики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A35> skos:prefLabel "Методология математики, дидактика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A69> skos:prefLabel "Общая прикладная математика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A71> skos:prefLabel "Теория математического моделирования"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A72> skos:prefLabel "Общие методы моделирования"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A73> skos:prefLabel "Анализ размерностей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A79> skos:prefLabel "Физика (если возможно, используйте более конкретные темы из разделов 70 - 86)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00A99> skos:prefLabel "Разные темы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00Bxx> skos:prefLabel "Труды конференций и сборники статей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00B05> skos:prefLabel "Сборники конспектов лекций"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00B10> skos:prefLabel "Сборники статей общей тематики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00B15> skos:prefLabel "Сборники статей той или иной конкретной тематики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00B20> skos:prefLabel "Труды конференций общей тематики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00B25> skos:prefLabel "Труды конференций той или иной конкретной тематики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00B30> skos:prefLabel "Юбилейные сборники"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00B50> skos:prefLabel "Избранные переводы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00B55> skos:prefLabel "Разнообразные переводные издания"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/00B60> skos:prefLabel "Сборники перепечатываемых статей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03-00> skos:prefLabel "Общая справочная информация (справочники, словари, библиография и пр.)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03-01> skos:prefLabel "Учебные материалы (учебные пособия, руководства и пр.)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03-02> skos:prefLabel "Обзоры исследований (монографии, обзорные статьи)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03-03> skos:prefLabel "Исторические материалы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03-04> skos:prefLabel "Конкретные машинные вычисления и программы (не теория вычислений или программирования)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03-06> skos:prefLabel "Труды конференций, школ, сборники и пр."@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03A05> skos:prefLabel "Философия и критика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03Bxx> skos:prefLabel "Общая логика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B05> skos:prefLabel "Классическая логика высказываний"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B10> skos:prefLabel "Классическая логика первого порядка"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B15> skos:prefLabel "Логика высших порядков и теория типов"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B20> skos:prefLabel "Подсистемы классической логики (включая интуиционистскую логику)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B22> skos:prefLabel "Абстрактные дедуктивные системы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B25> skos:prefLabel "Разрешимость теорий и множеств предложений"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B30> skos:prefLabel "Основания классических теорий (включая обратную математику)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B35> skos:prefLabel "Механизация доказательств и логических операций"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B40> skos:prefLabel "Комбинаторная логика и лямбда-исчисление"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B42> skos:prefLabel "Логика знаний и убеждений"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B44> skos:prefLabel "Временная логика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B45> skos:prefLabel "Модальная логика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B47> skos:prefLabel "Субструктурные логики (включая релевантность, следование, линейную логику, исчисление Ламбека, BCK и BCI логики)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B48> skos:prefLabel "Вероятностная и индуктивная логика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B50> skos:prefLabel "Многозначная логика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B52> skos:prefLabel "Нечеткая логика; логика неопределенности"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B53> skos:prefLabel "Логики, допускающие несовместность (паранепротиворечивые логики, дискуссивные логики и т.д.)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B55> skos:prefLabel "Промежуточные логики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B60> skos:prefLabel "Иные неклассические логики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B65> skos:prefLabel "Логика естественного языка"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B70> skos:prefLabel "Логика в computer science"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B80> skos:prefLabel "Иные приложения логики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03B99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03Cxx> skos:prefLabel "Теория моделей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C05> skos:prefLabel "Эквациональные классы, универсальная алгебра"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C07> skos:prefLabel "Основные свойства языков и структур первого порядка"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C10> skos:prefLabel "Элиминация кванторов, модельная полнота и подобные вопросы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C13> skos:prefLabel "Конечные структуры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C15> skos:prefLabel "Счетные структуры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C20> skos:prefLabel "Ультрапроизведения и подобные конструкции"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C25> skos:prefLabel "Теоретико-модельный форсинг"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C30> skos:prefLabel "Иные теоретико-модельные конструкции"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C35> skos:prefLabel "Категоричность и полнота теорий"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C40> skos:prefLabel "Интерполяция, устойчивость, определимость"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C45> skos:prefLabel "Классификационная теория, стабильность и подобные понятия"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C50> skos:prefLabel "Модели со специальными свойствами (насыщенные, жесткие и т.д.)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C52> skos:prefLabel "Свойства классов моделей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C55> skos:prefLabel "Теоретико-множественная теория моделей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C57> skos:prefLabel "Эффективная и теоретико-рекурсивная теория моделей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C60> skos:prefLabel "Теоретико-модельная алгебра"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C62> skos:prefLabel "Модели арифметики и теории множеств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C64> skos:prefLabel "Теория моделей упорядоченных структур; o-минимальность"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C65> skos:prefLabel "Модели других математических теорий"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C68> skos:prefLabel "Иные разделы классической теории моделей первого порядка"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C70> skos:prefLabel "Логика на допустимых множествах"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C75> skos:prefLabel "Другие инфинитарные логики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C80> skos:prefLabel "Логика с дополнительными кванторами и операторами"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C85> skos:prefLabel "Теория моделей вторго и высших порядков"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C90> skos:prefLabel "Неклассические модели (булево-значные, пучки и т.д.)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C95> skos:prefLabel "Абстрактная теория моделей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C98> skos:prefLabel "Приложения теории моделей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03C99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03Dxx> skos:prefLabel "Вычислимость и теория рекурсии"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D03> skos:prefLabel "Системы Туэ, Поста и т.д."@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D05> skos:prefLabel "Автоматы и формальные грамматики в связи с логическими вопросами"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D10> skos:prefLabel "Машины Тьюринга и близкие понятия"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D15> skos:prefLabel "Сложность вычислений"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D20> skos:prefLabel "Рекурсивные функции и отношения, субрекурсивные иерархии"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D25> skos:prefLabel "Рекурсивно (вычислимо) перечислимые множества и степени"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D28> skos:prefLabel "Другие структуры Тьюринговых степеней"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D30> skos:prefLabel "Другие степени и сводимости"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D35> skos:prefLabel "Неразрешимость и степени множеств предложений"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D40> skos:prefLabel "Проблемы равенства слов и т.д."@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D45> skos:prefLabel "Теория нумераций, эффективно представленные структуры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D50> skos:prefLabel "Типы рекурсивной эквивалентности множеств и структур, изоли"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D55> skos:prefLabel "Иерархии"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D60> skos:prefLabel "Вычислимость и теория рекурсии на ординалах, допустимых множествах и т.д."@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D65> skos:prefLabel "Теории рекурсии высших типов и теоретико-множественная"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D70> skos:prefLabel "Индуктивная определимость"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D75> skos:prefLabel "Абстактные и аксиоматические вычислимость и теория рекурсии"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D80> skos:prefLabel "Приложения вычислимости и теории рекурсии"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03D99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03Exx> skos:prefLabel "Теория множеств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E02> skos:prefLabel "Отношения разбиения"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E04> skos:prefLabel "Упорядоченные множества и их конфинальности; pcf теория"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E05> skos:prefLabel "Другая комбинаторная теория множеств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E10> skos:prefLabel "Ординальные и кардинальные числа"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E15> skos:prefLabel "Дескриптивная теория множеств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E17> skos:prefLabel "Кардинальные характеристики континуума"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E20> skos:prefLabel "Другая классическая теория множеств (включая функции, отношения и алгебру множеств)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E25> skos:prefLabel "Аксиома выбора и подобные утверждения"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E30> skos:prefLabel "Аксиоматика классической теории множеств и ее фрагментов"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E35> skos:prefLabel "Результаты о совместности и независимости"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E40> skos:prefLabel "Другие аспекты форсинга и булево-значных моделей"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E45> skos:prefLabel "Внутренние модели, включая конструктивность, ординальную определимость и ядерные модели"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E47> skos:prefLabel "Другие понятия теоретико-множественной определимости"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E50> skos:prefLabel "Континуум-гипотеза и аксиома Мартина"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E55> skos:prefLabel "Большие кардиналы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E60> skos:prefLabel "Принципы детерминированности"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E65> skos:prefLabel "Другие гипотезы и аксиомы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E70> skos:prefLabel "Теории множеств неклассическая и второго порядка"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E72> skos:prefLabel "Нечеткая теория множеств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E75> skos:prefLabel "Приложения теории множеств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03E99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03Fxx> skos:prefLabel "Теория доказательств и конструктивная математика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F03> skos:prefLabel "Общая теория доказательств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F05> skos:prefLabel "Устранение сечений и теоремы о нормальной форме"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F07> skos:prefLabel "Структура доказательств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F10> skos:prefLabel "Функционалы в теории доказательств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F15> skos:prefLabel "Рекурсивные ординалы и ординальные обозначения"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F20> skos:prefLabel "Сложность доказательств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F25> skos:prefLabel "Относительная совместность и интерпретации"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F30> skos:prefLabel "Арифметика первого порядка и ее фрагменты"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F35> skos:prefLabel "Арифметики второго и высших порядков и их фрагменты"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F40> skos:prefLabel "Геделевские нумерации в теории доказательств"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F45> skos:prefLabel "Логики доказуемости и соответствующие алгебры (напр., диагонализируемые алгебры)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F50> skos:prefLabel "Метаматематика конструктивных систем"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F52> skos:prefLabel "Линейная логика и другие субструктурные логики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F55> skos:prefLabel "Интуиционистская математика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F60> skos:prefLabel "Конструктивный и рекурсивный анализ"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F65> skos:prefLabel "Другая конструктивная математика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03F99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03Gxx> skos:prefLabel "Алгебраическая логика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03G05> skos:prefLabel "Булевы алгебры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03G10> skos:prefLabel "Решетки и родственные структуры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03G12> skos:prefLabel "Квантовая логика"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03G15> skos:prefLabel "Цилиндрические и полиадические алгебры; реляционные алгебры"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03G20> skos:prefLabel "Алгебры Лукасевича и Поста"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03G25> skos:prefLabel "Другие алгебры, относящиеся к логике"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03G30> skos:prefLabel "Категорная логика, топосы"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03G99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03Hxx> skos:prefLabel "Нестандартные модели"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03H05> skos:prefLabel "Нестандартные модели в математике"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03H10> skos:prefLabel "Другие приложения нестандартных моделей (экономика, физика и т.д.)"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03H15> skos:prefLabel "Нестандартные модели арифметики"@rs .
-<https://msc2020.org/resources/MSC/2020/MSC2020/03H99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@rs .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00-XX> skos:prefLabel "Общий"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/01-XX> skos:prefLabel "История и биографии"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03-XX> skos:prefLabel "Математическая логика и основания математики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/05-XX> skos:prefLabel "Комбинаторика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/06-XX> skos:prefLabel "Порядок, решетки, упорядоченные алгебраические структуры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/08-XX> skos:prefLabel "Общие алгебраические системы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/11-XX> skos:prefLabel "Теория чисел"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/12-XX> skos:prefLabel "Теория полей и многочленов"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/13-XX> skos:prefLabel "Коммутативные кольца и алгебры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/14-XX> skos:prefLabel "Алгебраическая геометрия"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/15-XX> skos:prefLabel "Линейная и полилинейная алгебра; теория матриц"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/16-XX> skos:prefLabel "Ассоциативные кольца и алгебры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/17-XX> skos:prefLabel "Неассоциативные кольца и алгебры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/18-XX> skos:prefLabel "Теория категорий; гомологическая алгебра"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/19-XX> skos:prefLabel "$K$-теория"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/20-XX> skos:prefLabel "Теория групп и ее обобщения"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/22-XX> skos:prefLabel "Топологические группы, группы Ли"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/26-XX> skos:prefLabel "Теория функций действительного переменного"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/28-XX> skos:prefLabel "Мера и интегрирование"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/30-XX> skos:prefLabel "Теория функций комплексного переменного"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/31-XX> skos:prefLabel "Теория потенциала"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/32-XX> skos:prefLabel "Пространства многих комплексных переменных и аналитические пространства"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/33-XX> skos:prefLabel "Специальные функции"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/34-XX> skos:prefLabel "Обыкновенные дифференциальные уравнения"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/35-XX> skos:prefLabel "Дифференциальные уравнения с частными производными"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/37-XX> skos:prefLabel "Динамические системы и эргодическая теория"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/39-XX> skos:prefLabel "Разностные и функциональные уравнения"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/40-XX> skos:prefLabel "Последовательности, ряды, суммируемость"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/41-XX> skos:prefLabel "Аппроксимация и разложение в ряды"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/42-XX> skos:prefLabel "Гармонический анализ"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/43-XX> skos:prefLabel "Абстрактный гармонический анализ"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/44-XX> skos:prefLabel "Интегральные преобразования, операционное исчисление"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/45-XX> skos:prefLabel "Интегральные уравнения"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/46-XX> skos:prefLabel "Функциональный анализ"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/47-XX> skos:prefLabel "Теория операторов"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/49-XX> skos:prefLabel "Вариационное исчисление и оптимальное управление; оптимизация"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/51-XX> skos:prefLabel "Геометрия"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/52-XX> skos:prefLabel "Выпуклая и дискретная геометрия"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/53-XX> skos:prefLabel "Дифференциальная геометрия"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/54-XX> skos:prefLabel "Общая топология"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/55-XX> skos:prefLabel "Алгебраическая топология"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/57-XX> skos:prefLabel "Многообразия и клеточные комплексы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/58-XX> skos:prefLabel "Глобальный анализ, анализ на многообразиях"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/60-XX> skos:prefLabel "Теория вероятностей и случайные процессы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/62-XX> skos:prefLabel "Математическая статистика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/65-XX> skos:prefLabel "Численный анализ"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/68-XX> skos:prefLabel "Computer science"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/70-XX> skos:prefLabel "Механика материальных точек и систем"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/74-XX> skos:prefLabel "Механика деформируемого твердого тела"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/76-XX> skos:prefLabel "Механика жидкости"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/78-XX> skos:prefLabel "Оптика, теория электромагнетизма"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/80-XX> skos:prefLabel "Классическая термодинамика, теплоперенос"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/81-XX> skos:prefLabel "Квантовая теория"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/82-XX> skos:prefLabel "Статистическая механика, строение вещества"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/83-XX> skos:prefLabel "Теория относительности и гравитации"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/85-XX> skos:prefLabel "Астрономия и астрофизика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/86-XX> skos:prefLabel "Геофизика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/90-XX> skos:prefLabel "Исследование операций, математическое программирование"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/91-XX> skos:prefLabel "Теория игр, экономика, общественные и психологические науки"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/92-XX> skos:prefLabel "Биология и другие естественные науки"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/93-XX> skos:prefLabel "Теория систем; управление"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/94-XX> skos:prefLabel "Теория информации и коммуникации, схемы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/97-XX> skos:prefLabel "Математическое образование"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00-01> skos:prefLabel "Учебные материалы (учебные пособия, руководства и пр.)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00-02> skos:prefLabel "Обзоры исследований (монографии, обзорные статьи)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00Axx> skos:prefLabel "Общие и те или иные конкретные темы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A05> skos:prefLabel "Общая математика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A06> skos:prefLabel "Математика для нематематиков (технические науки, общественные науки и т.д.)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A07> skos:prefLabel "Сборники задач"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A08> skos:prefLabel "Занимательная математика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A15> skos:prefLabel "Библиографии"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A17> skos:prefLabel "Обзоры книг"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A20> skos:prefLabel "Словари и другая справочная литература общего характера"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A22> skos:prefLabel "Формуляры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A30> skos:prefLabel "Философия математики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A35> skos:prefLabel "Методология математики, дидактика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A69> skos:prefLabel "Общая прикладная математика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A71> skos:prefLabel "Теория математического моделирования"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A72> skos:prefLabel "Общие методы моделирования"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A73> skos:prefLabel "Анализ размерностей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A79> skos:prefLabel "Физика (если возможно, используйте более конкретные темы из разделов 70 - 86)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00A99> skos:prefLabel "Разные темы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00Bxx> skos:prefLabel "Труды конференций и сборники статей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00B05> skos:prefLabel "Сборники конспектов лекций"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00B10> skos:prefLabel "Сборники статей общей тематики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00B15> skos:prefLabel "Сборники статей той или иной конкретной тематики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00B20> skos:prefLabel "Труды конференций общей тематики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00B25> skos:prefLabel "Труды конференций той или иной конкретной тематики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00B30> skos:prefLabel "Юбилейные сборники"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00B50> skos:prefLabel "Избранные переводы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00B55> skos:prefLabel "Разнообразные переводные издания"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/00B60> skos:prefLabel "Сборники перепечатываемых статей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03-00> skos:prefLabel "Общая справочная информация (справочники, словари, библиография и пр.)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03-01> skos:prefLabel "Учебные материалы (учебные пособия, руководства и пр.)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03-02> skos:prefLabel "Обзоры исследований (монографии, обзорные статьи)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03-03> skos:prefLabel "Исторические материалы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03-04> skos:prefLabel "Конкретные машинные вычисления и программы (не теория вычислений или программирования)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03-06> skos:prefLabel "Труды конференций, школ, сборники и пр."@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03A05> skos:prefLabel "Философия и критика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03Bxx> skos:prefLabel "Общая логика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B05> skos:prefLabel "Классическая логика высказываний"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B10> skos:prefLabel "Классическая логика первого порядка"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B15> skos:prefLabel "Логика высших порядков и теория типов"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B20> skos:prefLabel "Подсистемы классической логики (включая интуиционистскую логику)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B22> skos:prefLabel "Абстрактные дедуктивные системы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B25> skos:prefLabel "Разрешимость теорий и множеств предложений"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B30> skos:prefLabel "Основания классических теорий (включая обратную математику)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B35> skos:prefLabel "Механизация доказательств и логических операций"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B40> skos:prefLabel "Комбинаторная логика и лямбда-исчисление"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B42> skos:prefLabel "Логика знаний и убеждений"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B44> skos:prefLabel "Временная логика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B45> skos:prefLabel "Модальная логика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B47> skos:prefLabel "Субструктурные логики (включая релевантность, следование, линейную логику, исчисление Ламбека, BCK и BCI логики)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B48> skos:prefLabel "Вероятностная и индуктивная логика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B50> skos:prefLabel "Многозначная логика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B52> skos:prefLabel "Нечеткая логика; логика неопределенности"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B53> skos:prefLabel "Логики, допускающие несовместность (паранепротиворечивые логики, дискуссивные логики и т.д.)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B55> skos:prefLabel "Промежуточные логики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B60> skos:prefLabel "Иные неклассические логики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B65> skos:prefLabel "Логика естественного языка"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B70> skos:prefLabel "Логика в computer science"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B80> skos:prefLabel "Иные приложения логики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03B99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03Cxx> skos:prefLabel "Теория моделей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C05> skos:prefLabel "Эквациональные классы, универсальная алгебра"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C07> skos:prefLabel "Основные свойства языков и структур первого порядка"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C10> skos:prefLabel "Элиминация кванторов, модельная полнота и подобные вопросы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C13> skos:prefLabel "Конечные структуры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C15> skos:prefLabel "Счетные структуры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C20> skos:prefLabel "Ультрапроизведения и подобные конструкции"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C25> skos:prefLabel "Теоретико-модельный форсинг"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C30> skos:prefLabel "Иные теоретико-модельные конструкции"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C35> skos:prefLabel "Категоричность и полнота теорий"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C40> skos:prefLabel "Интерполяция, устойчивость, определимость"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C45> skos:prefLabel "Классификационная теория, стабильность и подобные понятия"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C50> skos:prefLabel "Модели со специальными свойствами (насыщенные, жесткие и т.д.)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C52> skos:prefLabel "Свойства классов моделей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C55> skos:prefLabel "Теоретико-множественная теория моделей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C57> skos:prefLabel "Эффективная и теоретико-рекурсивная теория моделей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C60> skos:prefLabel "Теоретико-модельная алгебра"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C62> skos:prefLabel "Модели арифметики и теории множеств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C64> skos:prefLabel "Теория моделей упорядоченных структур; o-минимальность"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C65> skos:prefLabel "Модели других математических теорий"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C68> skos:prefLabel "Иные разделы классической теории моделей первого порядка"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C70> skos:prefLabel "Логика на допустимых множествах"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C75> skos:prefLabel "Другие инфинитарные логики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C80> skos:prefLabel "Логика с дополнительными кванторами и операторами"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C85> skos:prefLabel "Теория моделей вторго и высших порядков"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C90> skos:prefLabel "Неклассические модели (булево-значные, пучки и т.д.)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C95> skos:prefLabel "Абстрактная теория моделей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C98> skos:prefLabel "Приложения теории моделей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03C99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03Dxx> skos:prefLabel "Вычислимость и теория рекурсии"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D03> skos:prefLabel "Системы Туэ, Поста и т.д."@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D05> skos:prefLabel "Автоматы и формальные грамматики в связи с логическими вопросами"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D10> skos:prefLabel "Машины Тьюринга и близкие понятия"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D15> skos:prefLabel "Сложность вычислений"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D20> skos:prefLabel "Рекурсивные функции и отношения, субрекурсивные иерархии"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D25> skos:prefLabel "Рекурсивно (вычислимо) перечислимые множества и степени"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D28> skos:prefLabel "Другие структуры Тьюринговых степеней"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D30> skos:prefLabel "Другие степени и сводимости"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D35> skos:prefLabel "Неразрешимость и степени множеств предложений"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D40> skos:prefLabel "Проблемы равенства слов и т.д."@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D45> skos:prefLabel "Теория нумераций, эффективно представленные структуры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D50> skos:prefLabel "Типы рекурсивной эквивалентности множеств и структур, изоли"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D55> skos:prefLabel "Иерархии"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D60> skos:prefLabel "Вычислимость и теория рекурсии на ординалах, допустимых множествах и т.д."@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D65> skos:prefLabel "Теории рекурсии высших типов и теоретико-множественная"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D70> skos:prefLabel "Индуктивная определимость"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D75> skos:prefLabel "Абстактные и аксиоматические вычислимость и теория рекурсии"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D80> skos:prefLabel "Приложения вычислимости и теории рекурсии"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03D99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03Exx> skos:prefLabel "Теория множеств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E02> skos:prefLabel "Отношения разбиения"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E04> skos:prefLabel "Упорядоченные множества и их конфинальности; pcf теория"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E05> skos:prefLabel "Другая комбинаторная теория множеств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E10> skos:prefLabel "Ординальные и кардинальные числа"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E15> skos:prefLabel "Дескриптивная теория множеств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E17> skos:prefLabel "Кардинальные характеристики континуума"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E20> skos:prefLabel "Другая классическая теория множеств (включая функции, отношения и алгебру множеств)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E25> skos:prefLabel "Аксиома выбора и подобные утверждения"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E30> skos:prefLabel "Аксиоматика классической теории множеств и ее фрагментов"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E35> skos:prefLabel "Результаты о совместности и независимости"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E40> skos:prefLabel "Другие аспекты форсинга и булево-значных моделей"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E45> skos:prefLabel "Внутренние модели, включая конструктивность, ординальную определимость и ядерные модели"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E47> skos:prefLabel "Другие понятия теоретико-множественной определимости"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E50> skos:prefLabel "Континуум-гипотеза и аксиома Мартина"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E55> skos:prefLabel "Большие кардиналы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E60> skos:prefLabel "Принципы детерминированности"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E65> skos:prefLabel "Другие гипотезы и аксиомы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E70> skos:prefLabel "Теории множеств неклассическая и второго порядка"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E72> skos:prefLabel "Нечеткая теория множеств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E75> skos:prefLabel "Приложения теории множеств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03E99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03Fxx> skos:prefLabel "Теория доказательств и конструктивная математика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F03> skos:prefLabel "Общая теория доказательств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F05> skos:prefLabel "Устранение сечений и теоремы о нормальной форме"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F07> skos:prefLabel "Структура доказательств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F10> skos:prefLabel "Функционалы в теории доказательств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F15> skos:prefLabel "Рекурсивные ординалы и ординальные обозначения"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F20> skos:prefLabel "Сложность доказательств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F25> skos:prefLabel "Относительная совместность и интерпретации"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F30> skos:prefLabel "Арифметика первого порядка и ее фрагменты"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F35> skos:prefLabel "Арифметики второго и высших порядков и их фрагменты"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F40> skos:prefLabel "Геделевские нумерации в теории доказательств"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F45> skos:prefLabel "Логики доказуемости и соответствующие алгебры (напр., диагонализируемые алгебры)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F50> skos:prefLabel "Метаматематика конструктивных систем"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F52> skos:prefLabel "Линейная логика и другие субструктурные логики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F55> skos:prefLabel "Интуиционистская математика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F60> skos:prefLabel "Конструктивный и рекурсивный анализ"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F65> skos:prefLabel "Другая конструктивная математика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03F99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03Gxx> skos:prefLabel "Алгебраическая логика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03G05> skos:prefLabel "Булевы алгебры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03G10> skos:prefLabel "Решетки и родственные структуры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03G12> skos:prefLabel "Квантовая логика"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03G15> skos:prefLabel "Цилиндрические и полиадические алгебры; реляционные алгебры"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03G20> skos:prefLabel "Алгебры Лукасевича и Поста"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03G25> skos:prefLabel "Другие алгебры, относящиеся к логике"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03G30> skos:prefLabel "Категорная логика, топосы"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03G99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03Hxx> skos:prefLabel "Нестандартные модели"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03H05> skos:prefLabel "Нестандартные модели в математике"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03H10> skos:prefLabel "Другие приложения нестандартных моделей (экономика, физика и т.д.)"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03H15> skos:prefLabel "Нестандартные модели арифметики"@ru .
+<https://msc2020.org/resources/MSC/2020/MSC2020/03H99> skos:prefLabel "Отличное от перечисленного выше, но в этом разделе"@ru .

@@ -24,7 +24,7 @@ with open(outfile,'w') as f:
 		code = line[1:6]
 		text = line[8:].strip()
 		if code != '':
-			f.write('<https://msc2020.org/resources/MSC/2020/MSC2020/%s> skos:prefLabel "%s"@rs .\n' % (code, text))
+			f.write('<https://msc2020.org/resources/MSC/2020/MSC2020/%s> skos:prefLabel "%s"@ru .\n' % (code, text))
 # 			print('<https://msc2020.org/resources/MSC/2020/MSC2020/%s> skos:prefLabel "%s"@rs .' % (code, text))
 	f.close
 
