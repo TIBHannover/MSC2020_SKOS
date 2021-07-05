@@ -1,19 +1,18 @@
 #!/usr/local/bin/pyenv
 # for 3.8.2
 
-import re
 import os
 
 #+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+
 #+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+
 
 home = os.path.expanduser("~")
-''' 
+'''
 = os.getenv('USERPROFILE') or os.getenv('HOME')
 '''
 
 mscrevbase = home + "/Projects/MSC-Rev/"
-msc2020base= mscrevbase + "MSC2020/"
+msc2020base = mscrevbase + "MSC2020/"
 
 outfile = msc2020base + 'deweydraft'
 
@@ -25,12 +24,12 @@ ddc_codes_used = []
 ddc_codes_counts = {}
 
 linecount = 0
-with open(outfile,'wt') as f:
+with open(outfile, 'wt') as f:
 	f.write('### Dewey translations\n')
 	for line in deweyfile.readlines():
 		linecount = linecount + 1
-		code = line.split('\t',2)[0]
-		text = line.split('\t',2)[1]
+		code = line.split('\t', 2)[0]
+		text = line.split('\t', 2)[1]
 #		print (code + ' | ' + text)
 		dcodes = text.split('    ')[1].split('  ')
 #		print(dcodes)
@@ -42,19 +41,19 @@ with open(outfile,'wt') as f:
 				ddc_codes_used.append(dcs)
 				ddc_codes_counts[dcs]= 1
 #				print('New ', dcs)
-				f.write('''<https://msc2020.org/resources/MSC/2020/MSC2020/msc2020-fullDD21-{1}> rdf:type owl:NamedIndividual , skos:Concept ; 
+				f.write('''<https://msc2020.org/resources/MSC/2020/MSC2020/\                 msc2020-fullDD21-{1}> rdf:type owl:NamedIndividual , skos:Concept ; 
             dcterms:issued “2011-06-22”^^xsd:date ;
             dcterms:isPartOf <https://msc2020.org/resources/MSC/2020/MSC2020/> ;
             dcterms:isPartOf  <https://www.oclc.org/content/dam/oclc/dewey/ddc23-summaries.pdf> ;
             rdfs:comment """See also for examples <https://deweysearchde.pansoft.de/webdeweysearch/mainClasses.html>"""@en ;
             mscvocab:scope “A full code from DD21”@en ;
             rdf:value “{1}”^^xsd:string.\n\n'''.format(code, dcs))
-				ddc_codes_counts[dcs] = int(ddc_codes_counts[dcs]) +1
+				ddc_codes_counts[dcs] = int(ddc_codes_counts[dcs]) + 1
 			else:
 				ddc_codes_counts[dcs] = ddc_codes_counts[dcs] + 1
 	f.close
-            
-print('Number of MSC classes mapped: ', linecount,'\n')
+
+print('Number of MSC classes mapped: ', linecount, '\n')
 print('Number of Dewey classes referenced: ', len(ddc_codes_used),'\n')
 
 with open(deweycountfile, 'wt') as f: 
@@ -80,3 +79,7 @@ with open(deweycountfile, 'wt') as f:
 
 f.close()  
 
+# https://www.w3.org/2004/02/skos/core#narrowMatch   # after
+# https://www.w3.org/2004/02/skos/core#closeMatch  
+# https://www.w3.org/2004/02/skos/core#exactMatch
+# https://www.w3.org/2004/02/skos/core#related
