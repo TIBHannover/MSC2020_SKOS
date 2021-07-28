@@ -396,7 +396,7 @@ msc:SeeForStatement-03B45-to-03B42 rdf:type owl:NamedIndividual ,
                                    rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/03B42> ;
                                    rdf:predicate mscvocab:seeConditionally ;
                                    rdf:subject <https://msc2020.org/resources/MSC/2020/MSC2020/03B45> ;
-                                   mscvocab:scope "For knowledge and belief"^^rdf:XMLLiteral .
+                                   mscvocab:scope "For knowledge and belief"@en .
 ```
 
 Q2: Where should we introduce mscvocab? Should we comment on the fact, that we started without it? I think I did not very much refer to it before... And the OpenRefine code snippets are all using properties like `msc:seeAlso` because we defined them within the file/namespace of the MSC data - which is very confusing.
@@ -3120,7 +3120,7 @@ Step 10 incluedes a great number of very fine-grained operations, sometimes even
       "mode": "row-based"
     },
     "baseColumnName": "For-x-see-y statement identifier",
-    "expression": "grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\"",
+    "expression": "grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"@en .\"",
     "onError": "store-error",
     "newColumnName": "For-x-see-y statements",
     "columnInsertIndex": 29,

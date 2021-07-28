@@ -2866,11 +2866,11 @@
       "mode": "row-based"
     },
     "baseColumnName": "For-x-see-y statement identifier",
-    "expression": "grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\"",
+    "expression": "grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"@en .\"",
     "onError": "store-error",
     "newColumnName": "For-x-see-y statements",
     "columnInsertIndex": 29,
-    "description": "Create column For-x-see-y statements at index 29 based on column For-x-see-y statement identifier using expression grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"^^rdf:XMLLiteral .\""
+    "description": "Create column For-x-see-y statements at index 29 based on column For-x-see-y statement identifier using expression grel:value+\"a msc:seeForStatement ; rdf:subject \"+cells[\"Concept Identifier\"].value+\"; rdf:predicate msc:seeFor ; rdf:object <https://msc2020.org/resources/MSC/2020/MSC2020/\"+cells[\"msc:ForTarget\"].value+\"> ; msc:scope \\\"\"+cells[\"msc:scope\"].value+\"\\\"@en .\""
   },
   {
     "op": "core/column-addition",
